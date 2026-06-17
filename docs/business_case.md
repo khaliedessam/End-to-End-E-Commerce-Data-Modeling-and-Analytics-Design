@@ -303,32 +303,6 @@ Key ERD elements:
 - Department -> Product
 - Department -> Employee
 
-## Conceptual Data Model
-
-The Conceptual Data Model (CDM) represents the high-level view of the ShopEase system, focusing on entities and their relationships without worrying about implementation details.
-
-**File**: `Conceptual Data Modeling.drawio`
-
-**Key Features**:
-
-- **Entity Representation**: All primary entities are shown as rectangles (Customer, Product, Order, etc.)
-- **Relationship Diamonds**: Relationships are displayed as diamonds showing how entities interact (REVIEW, APPLIES, STORE, SUPPLIES, etc.)
-- **Cardinality Labels**: Clear 1:M and M:M labels on relationship lines
-- **Bridge Tables Highlighted**: Many-to-many relationships are marked with blue diamond shapes (REVIEW, APPLY, STORE, SUPPLIES)
-- **Clean Organization**: Entities are logically grouped by business function
-
-**Main Relationships Visualized**:
-
-- Customer places Orders and writes Reviews
-- Orders contain OrderDetails that reference Products
-- Products are categorized in Departments and supplied by Suppliers
-- Warehouse inventory maintains stock quantities across locations
-- Payments use Payment Methods
-- Employees belong to Departments
-- Shipping Companies deliver Orders
-
-This model serves as the bridge between the business requirements and the technical implementation.
-
 ## Relational Schema
 
 The relational schema is designed to support data consistency and analytic reporting.
@@ -385,48 +359,7 @@ The relational schema is designed to support data consistency and analytic repor
 - Quantity
 - LastUpdated
 
-## 3NF Data Model
-
-The 3NF (Third Normal Form) Data Model is the normalized relational schema ready for implementation in a database. It eliminates redundancy while maintaining referential integrity and enforcing all business rules.
-
-**File**: `3NF Data Model` (dbdiagram.io visualization)
-
-**Key Features**:
-
-- **Complete Table Definitions**: All tables with primary keys (PK) and foreign keys (FK) clearly marked
-- **Data Types Specified**: Each attribute includes its data type (int, varchar, date, decimal, etc.)
-- **Bridge Tables Implemented**: Four bridge tables manage M:M relationships:
-  - **Review**: Customer M:M Product with Rating, Comment, ReviewDate
-  - **ProductSupplier**: Product M:M Supplier with AgreementPrice, Availability
-  - **ProductPromotion**: Product M:M Promotion linking active promotions
-  - **Inventory**: Product M:M Warehouse with stock Quantity tracking
-- **Foreign Key Relationships**: All relationships enforced through FK constraints
-- **Referential Integrity**: Proper cascading rules maintain data consistency
-
-**Table Summary**:
-
-| Core Tables | Purpose |
-|-------------|---------|
-| Customer, CustomerAddress | Customer profile and delivery addresses |
-| Product, Department | Product catalog organized by department |
-| Orders, OrderDetail | Sales transactions with line items |
-| PaymentTransaction, PaymentMethod | Payment processing and method tracking |
-| Supplier, Employee | External suppliers and internal staff |
-| Warehouse | Distribution center management |
-| Promotion | Time-based promotional campaigns |
-| ShippingCompany | Logistics partner information |
-
-**Normalization Verification**:
-
-- **1NF**: All attributes contain atomic values; no repeating groups
-- **2NF**: No partial dependencies; each attribute depends on the whole primary key
-- **3NF**: No transitive dependencies; non-key attributes depend only on the primary key
-
-This model is production-ready and optimized for data consistency and query performance.
-
 ## Normalization Summary
-
-The ShopEase schema has been normalized to Third Normal Form (3NF) to ensure data consistency, eliminate redundancy, and maintain referential integrity. See the **3NF Data Model** section above for detailed visualization and implementation details.
 
 ### First Normal Form (1NF)
 
