@@ -1,0 +1,301 @@
+EmployeeID,DepartmentID,EmployeeName,JobTitle,HireDate,Salary,City,Country
+1,1,Jonathan Robinson,Warehouse Specialist,11/16/2021,153152.13,Abha,Saudi Arabia
+2,2,Vernon Kline,Manager,1/20/2017,219138.49,Yanbu,Saudi Arabia
+3,3,Christine Murray,Data Analyst,11/26/2017,205678.72,Mecca,Saudi Arabia
+4,4,Anna Maddox,Manager,9/1/2025,121156.69,Dammam,Saudi Arabia
+5,4,David Anderson,Sales Executive,3/21/2021,,Jeddah,Saudi Arabia
+6,5,George Jones,Operations Coordinator,3/31/2022,119799.14,Mecca,Saudi Arabia
+7,2,Dana Garcia,Customer Support,12/10/2019,137387.4,Riyadh,Saudi Arabia
+8,2,Kenneth Montgomery,Manager,4/27/2019,189228.99,Najran,Saudi Arabia
+9,5,Jeffrey Velazquez,Warehouse Specialist,4/7/2021,58614.17,Jazan,Saudi Arabia
+10,1,Mrs. Holly Stewart,Sales Executive,1/14/2019,77756.56,Tabuk,Saudi Arabia
+11,5,Dean Taylor,Sales Executive,6/3/2017,54109.24,Khobar,Saudi Arabia
+12,2,Steven Pope,Sales Executive,6/15/2019,146068.48,Tabuk,Saudi Arabia
+13,2,Andrew Wright,Manager,7/23/2023,179986.1,Abha,Saudi Arabia
+14,3,Alexis Richardson,Customer Support,7/6/2022,86448.16,Yanbu,Saudi Arabia
+15,1,Heather Spence,Operations Coordinator,10/15/2017,163207.97,Mecca,Saudi Arabia
+16,5,John Goodman,Manager,6/21/2021,214068.69,Taif,Saudi Arabia
+17,2,James Turner,Data Analyst,7/30/2022,174948.7,Hail,Saudi Arabia
+18,5,Tiffany Miller,Sales Executive,1/7/2023,203780.06,Al Ahsa,Saudi Arabia
+19,5,Heather Edwards,Operations Coordinator,12/20/2025,,Taif,Saudi Arabia
+20,5,Anthony Bailey,Manager,1/27/2017,149891.87,Buraidah,Saudi Arabia
+21,5,Thomas Trevino,Warehouse Specialist,12/21/2023,63941.36,Al Ahsa,Saudi Arabia
+22,2,Jasmine Burgess,Sales Executive,9/28/2023,218781.38,Tabuk,Saudi Arabia
+23,4,William Rich,Operations Coordinator,5/6/2021,,Dammam,Saudi Arabia
+24,2,Jonathan Cobb DDS,Sales Executive,5/6/2020,205418.22,Jeddah,Saudi Arabia
+25,4,Marco Thornton,Warehouse Specialist,8/3/2017,137891.06,Medina,Saudi Arabia
+26,4,Rebecca Roberts,Customer Support,6/3/2020,58309.49,Riyadh,Saudi Arabia
+27,2,Jeffrey Thomas,Manager,6/22/2025,65975.21,Abha,Saudi Arabia
+28,2,Steven Robinson,Manager,4/11/2020,141915.51,Riyadh,Saudi Arabia
+29,5,Mrs. Debra Ramsey DDS,Warehouse Specialist,10/4/2017,142294,Khobar,Saudi Arabia
+30,5,Michelle Romero,Customer Support,4/18/2019,105745.39,Taif,Saudi Arabia
+31,5,Timothy Coleman,Manager,9/12/2025,88454.29,Najran,Saudi Arabia
+32,4,Wendy Lopez,Warehouse Specialist,10/3/2017,122009.4,Al Ahsa,Saudi Arabia
+33,3,Cheryl Sims,Operations Coordinator,12/1/2019,98956.01,Hail,Saudi Arabia
+34,2,Mary Faulkner,Data Analyst,6/20/2020,109637,Buraidah,Saudi Arabia
+35,2,Steven Peters,Sales Executive,3/7/2025,117369.88,Riyadh,Saudi Arabia
+36,5,Kyle Lawson,Customer Support,1/1/2018,61987.08,Hail,Saudi Arabia
+37,4,Susan Silva,Customer Support,7/7/2025,218597.04,Hail,Saudi Arabia
+38,4,Mrs. Susan Rodriguez,Operations Coordinator,1/29/2022,207362.53,Hail,Saudi Arabia
+39,3,Mrs. Rachel Burns,Manager,10/15/2022,205685.36,Riyadh,Saudi Arabia
+40,5,Angela Gonzalez,Customer Support,5/12/2019,160726.07,Khobar,Saudi Arabia
+41,5,Jeffery Allen,Manager,12/13/2021,45979.07,Tabuk,Saudi Arabia
+42,2,Paul Dunn,Manager,11/3/2021,61380.95,Riyadh,Saudi Arabia
+43,3,Clayton Miller,Sales Executive,10/6/2022,70342.09,Taif,Saudi Arabia
+44,2,Kristine Patrick,Operations Coordinator,3/25/2022,143281,Najran,Saudi Arabia
+45,3,Kristina Mendez,Data Analyst,6/14/2022,48308.36,Khobar,Saudi Arabia
+46,2,Donald Moreno,Data Analyst,3/23/2025,107358.22,Riyadh,Saudi Arabia
+47,3,Kimberly Martinez,Customer Support,3/22/2025,110452.51,Jazan,Saudi Arabia
+48,2,Jeremy Gonzalez,Sales Executive,8/25/2021,178947.64,Hail,Saudi Arabia
+49,5,Steven Walker,Customer Support,2/26/2023,103434.77,Khobar,Saudi Arabia
+50,1,Joshua Christensen,Manager,5/4/2026,215086.54,Taif,Saudi Arabia
+51,4,Vanessa Hill,Customer Support,7/1/2016,151348.96,Najran,Saudi Arabia
+52,2,Jason Smith,Sales Executive,2/14/2019,68392.5,Abha,Saudi Arabia
+53,4,Jared Moody,Data Analyst,3/6/2018,98726.46,Jazan,Saudi Arabia
+54,2,Barbara Bennett,Data Analyst,12/24/2020,136504.22,Khobar,Saudi Arabia
+55,5,Lisa King,Manager,1/16/2017,81825.3,Tabuk,Saudi Arabia
+56,1,Anthony Harris,Sales Executive,1/29/2022,141179.6,Al Ahsa,Saudi Arabia
+57,1,James Sullivan,Operations Coordinator,9/9/2020,150184.09,Jazan,Saudi Arabia
+58,3,Joseph Lawson,Manager,7/23/2019,215710.61,Najran,Saudi Arabia
+59,1,Jessica Lopez,Data Analyst,4/27/2018,139017.45,Tabuk,Saudi Arabia
+60,1,Bill Wright DDS,Sales Executive,11/21/2018,205536.72,Medina,Saudi Arabia
+61,2,Carl Hall,Manager,6/4/2020,104472.69,Abha,Saudi Arabia
+62,5,Casey Smith,Data Analyst,10/19/2019,198886.66,Hail,Saudi Arabia
+63,3,Jessica Rice,Operations Coordinator,6/1/2025,83294.35,Khobar,Saudi Arabia
+64,4,Elizabeth Webster,Data Analyst,9/16/2020,214686.38,Riyadh,Saudi Arabia
+65,3,Brian Griffin,Warehouse Specialist,11/27/2025,139740.15,Taif,Saudi Arabia
+66,2,Timothy Edwards,Customer Support,10/10/2020,95398.06,Buraidah,Saudi Arabia
+67,2,Johnny Morgan,Data Analyst,1/30/2023,159599.17,Jazan,Saudi Arabia
+68,4,Robin Cross,Operations Coordinator,10/24/2021,193273.48,Jazan,Saudi Arabia
+69,4,Anne Johnson,Operations Coordinator,5/17/2023,91243.43,Medina,Saudi Arabia
+70,3,Craig Lopez,Customer Support,11/16/2017,205388.35,Buraidah,Saudi Arabia
+71,3,Stacy Thomas,Manager,11/11/2024,157236.25,Tabuk,Saudi Arabia
+72,5,Brandi Lyons,Operations Coordinator,9/12/2020,113281.8,Najran,Saudi Arabia
+73,3,Julie Carter,Operations Coordinator,9/5/2025,203706.07,Jazan,Saudi Arabia
+74,2,Stephen Best,Sales Executive,8/26/2023,155445.89,Medina,Saudi Arabia
+75,4,Scott Aguilar,Customer Support,10/17/2024,81342.57,Dammam,Saudi Arabia
+76,3,Samuel Graham,Manager,2/13/2022,191369.71,Khobar,Saudi Arabia
+77,2,Judith Rodriguez,Operations Coordinator,6/27/2021,132015.95,Hail,Saudi Arabia
+78,4,Anthony Snyder,Data Analyst,12/20/2019,165039.96,Jazan,Saudi Arabia
+79,3,Richard Griffin,Customer Support,3/3/2022,201562.16,Medina,Saudi Arabia
+80,1,Christopher Neal,Sales Executive,8/23/2022,140626.47,Buraidah,Saudi Arabia
+81,3,Justin Rangel,Sales Executive,5/23/2021,176980,Riyadh,Saudi Arabia
+82,5,Kendra Arroyo,Data Analyst,1/22/2017,176366.46,Mecca,Saudi Arabia
+83,4,James Clark,Customer Support,1/19/2017,114191.64,Buraidah,Saudi Arabia
+84,1,Nichole Hall,Warehouse Specialist,11/29/2018,180470.39,Hail,Saudi Arabia
+85,4,Lisa Garner,Data Analyst,4/23/2021,125495.83,Tabuk,Saudi Arabia
+86,1,Ana Shaw,Data Analyst,5/31/2018,,Tabuk,Saudi Arabia
+87,1,Kelly Watts,Warehouse Specialist,10/9/2021,94910.44,Najran,Saudi Arabia
+88,5,Jeffrey Hernandez,Warehouse Specialist,1/19/2024,218444.44,Dammam,Saudi Arabia
+89,5,William Paul,Sales Executive,9/20/2023,135075.31,Abha,Saudi Arabia
+90,1,John Thompson,Sales Executive,6/2/2021,87574.14,Yanbu,Saudi Arabia
+91,3,Alexis Young,Sales Executive,12/29/2024,160272.39,Dammam,Saudi Arabia
+92,3,Robert Briggs,Operations Coordinator,11/7/2016,199216.12,Tabuk,Saudi Arabia
+93,3,Karen Fitzpatrick,Warehouse Specialist,3/1/2021,127602.28,Buraidah,Saudi Arabia
+94,3,Connie Warren,Customer Support,1/22/2017,205275.16,Dammam,Saudi Arabia
+95,5,Glenn French Jr.,Manager,8/28/2021,53309.02,Tabuk,Saudi Arabia
+96,4,Caleb Shea,Operations Coordinator,2/7/2019,135381.79,Najran,Saudi Arabia
+97,4,Michael Lyons,Operations Coordinator,6/11/2024,197697.06,Mecca,Saudi Arabia
+98,3,Leah Gonzalez,Data Analyst,3/21/2020,108498.55,Yanbu,Saudi Arabia
+99,4,Jerry Richard,Customer Support,9/1/2019,75860.66,Medina,Saudi Arabia
+100,1,Jeffrey Dougherty,Manager,10/17/2021,201587.34,Jazan,Saudi Arabia
+101,3,Katherine Saunders,Sales Executive,7/1/2025,121563.56,Riyadh,Saudi Arabia
+102,1,Kristi Mccarthy,Operations Coordinator,1/25/2019,212008.26,Khobar,Saudi Arabia
+103,3,Lisa Robinson,Data Analyst,8/27/2018,,Riyadh,Saudi Arabia
+104,3,James Kim,Manager,8/27/2020,0,Khobar,Saudi Arabia
+105,5,Michelle Arnold,Data Analyst,3/23/2017,183014.69,Buraidah,Saudi Arabia
+106,3,Andrea Small,Customer Support,1/27/2026,-5000,Jeddah,Saudi Arabia
+107,5,Stephanie Rios,Data Analyst,11/1/2024,197988.84,Medina,Saudi Arabia
+108,3,Lori Baker,Operations Coordinator,6/15/2018,215328.49,Khobar,Saudi Arabia
+109,1,Michael Fisher,Manager,1/27/2022,83908.69,Dammam,Saudi Arabia
+110,1,Christina Carlson,Operations Coordinator,3/10/2022,79669.21,Yanbu,Saudi Arabia
+111,4,Deborah Avila,Operations Coordinator,9/8/2020,133794.41,Mecca,Saudi Arabia
+112,1,Taylor Hensley,Operations Coordinator,12/19/2021,157524.79,Jeddah,Saudi Arabia
+113,2,Ronald Rodriguez,Operations Coordinator,11/2/2019,56790.46,Taif,Saudi Arabia
+114,2,Ashley Rodriguez,Manager,7/16/2022,84605.6,Yanbu,Saudi Arabia
+115,2,Abigail Flores,Data Analyst,9/14/2016,98779.17,Abha,Saudi Arabia
+116,4,Jessica Clark,Manager,6/12/2020,56805.62,Khobar,Saudi Arabia
+117,3,Aaron Friedman,Sales Executive,11/29/2017,-5000,Jeddah,Saudi Arabia
+118,5,Sue Clayton,Manager,2/24/2024,-5000,Jazan,Saudi Arabia
+119,4,Kimberly Taylor,Customer Support,4/25/2026,98135.82,Hail,Saudi Arabia
+120,5,Mr. Andrew White,Warehouse Specialist,8/24/2021,151568.48,Mecca,Saudi Arabia
+121,3,Corey Ball,Warehouse Specialist,10/9/2018,83449.04,Tabuk,Saudi Arabia
+122,2,Samantha Thompson,Customer Support,5/8/2020,77237.38,Jazan,Saudi Arabia
+123,1,Paul Martin,Warehouse Specialist,12/19/2016,169895.67,Abha,Saudi Arabia
+124,3,Kendra Taylor,Operations Coordinator,12/24/2023,77652.14,Jazan,Saudi Arabia
+125,2,Jordan Parker,Warehouse Specialist,6/7/2019,194629.59,Al Ahsa,Saudi Arabia
+126,1,Raymond Reyes,Manager,3/6/2018,128130.44,Abha,Saudi Arabia
+127,5,Victoria Luna,Operations Coordinator,1/7/2020,51489.39,Riyadh,Saudi Arabia
+128,3,Alicia Sweeney,Customer Support,10/21/2019,103663.15,Buraidah,Saudi Arabia
+129,5,Cynthia Ramirez,Customer Support,7/15/2018,122701.53,Taif,Saudi Arabia
+130,4,Brian Owens,Manager,1/22/2025,148280.82,Medina,Saudi Arabia
+131,1,Joshua Collins,Customer Support,1/14/2019,106910.07,Al Ahsa,Saudi Arabia
+132,5,Kim Wagner,Warehouse Specialist,10/4/2025,86787.47,Jeddah,Saudi Arabia
+133,2,Joseph Nelson,Manager,6/3/2023,61633.59,Tabuk,Saudi Arabia
+134,1,Adrian Welch,Data Analyst,9/28/2021,138377.84,Taif,Saudi Arabia
+135,2,Paige Pierce,Customer Support,3/19/2026,116025.67,Tabuk,Saudi Arabia
+136,2,Rodney Chandler,Customer Support,4/26/2019,142065.26,Jeddah,Saudi Arabia
+137,2,Richard Thompson,Customer Support,12/16/2018,67460.18,Yanbu,Saudi Arabia
+138,5,Joseph Williams,Customer Support,7/7/2023,172951.42,Abha,Saudi Arabia
+139,3,Dr. Jeff Martin MD,Customer Support,5/18/2022,141314.93,Mecca,Saudi Arabia
+140,5,Kelli Ramirez,Manager,10/27/2017,185153.62,Buraidah,Saudi Arabia
+141,3,Tony Glenn,Manager,4/14/2025,70905.61,Yanbu,Saudi Arabia
+142,3,Karina Whitney,Customer Support,4/15/2025,123878.21,Hail,Saudi Arabia
+143,5,Jorge Williams,Operations Coordinator,10/2/2024,82933.56,Khobar,Saudi Arabia
+144,4,Jacqueline Wright,Operations Coordinator,6/25/2023,211558.36,Tabuk,Saudi Arabia
+145,2,Evan Morris,Operations Coordinator,10/30/2025,91445.57,Mecca,Saudi Arabia
+146,3,Jose Stone,Customer Support,6/16/2020,216077.78,Yanbu,Saudi Arabia
+147,2,Heather Alvarez,Manager,10/11/2017,106866.65,Yanbu,Saudi Arabia
+148,2,Anthony Houston,Warehouse Specialist,11/23/2016,163506.05,Yanbu,Saudi Arabia
+149,4,Miguel Patterson,Data Analyst,11/3/2022,66814.91,Medina,Saudi Arabia
+150,1,Meghan Rodriguez,Sales Executive,11/10/2017,125214.44,Medina,Saudi Arabia
+151,5,Amanda Wood,Warehouse Specialist,2/1/2024,91136.98,Hail,Saudi Arabia
+152,3,Rodney Smith,Customer Support,7/12/2022,133785.04,Jazan,Saudi Arabia
+153,1,Wayne Murray,Operations Coordinator,2/7/2021,97090.12,Jazan,Saudi Arabia
+154,2,Mary Vazquez,Data Analyst,10/11/2022,140091.36,Najran,Saudi Arabia
+155,4,Lindsey Fischer,Warehouse Specialist,3/22/2023,120201.35,Medina,Saudi Arabia
+156,1,Cody Smith,Warehouse Specialist,2/23/2021,210376.32,Al Ahsa,Saudi Arabia
+157,3,Christine Mccarty,Operations Coordinator,5/10/2025,59069.13,Taif,Saudi Arabia
+158,4,Erika Ramirez,Operations Coordinator,7/1/2016,211983.79,Jeddah,Saudi Arabia
+159,3,Mark Reed,Manager,11/6/2017,98612.85,Mecca,Saudi Arabia
+160,5,Jennifer Hansen,Manager,8/17/2020,62652.69,Khobar,Saudi Arabia
+161,4,Christopher Duncan,Customer Support,11/28/2017,134649.8,Mecca,Saudi Arabia
+162,2,Gregory Buck,Operations Coordinator,1/16/2020,92401.05,Jeddah,Saudi Arabia
+163,2,Zachary Kerr,Operations Coordinator,12/8/2023,198921.93,Khobar,Saudi Arabia
+164,5,Matthew Hamilton,Operations Coordinator,5/24/2022,159476.39,Al Ahsa,Saudi Arabia
+165,5,Michael Newman,Customer Support,5/30/2017,192538.3,Abha,Saudi Arabia
+166,3,Bryan Doyle,Warehouse Specialist,9/18/2021,141041.35,Najran,Saudi Arabia
+167,4,Dr. Douglas Gomez Jr.,Customer Support,9/27/2018,214103.62,Riyadh,Saudi Arabia
+168,3,Tammy Kaufman,Operations Coordinator,11/5/2021,129134.19,Al Ahsa,Saudi Arabia
+169,3,Ashley Chase,Customer Support,12/12/2025,144698.42,Riyadh,Saudi Arabia
+170,5,Justin Jackson,Data Analyst,7/21/2016,176489.47,Dammam,Saudi Arabia
+171,1,Benjamin Price,Manager,1/30/2017,206515.87,Tabuk,Saudi Arabia
+172,1,Kelly Riddle,Customer Support,9/20/2022,199483.97,Jeddah,Saudi Arabia
+173,2,Wayne Graham,Warehouse Specialist,9/29/2025,182875.07,Buraidah,Saudi Arabia
+174,5,John Ward,Warehouse Specialist,10/9/2016,136938.23,Abha,Saudi Arabia
+175,4,Diana Payne,Operations Coordinator,4/12/2018,151281.27,Medina,Saudi Arabia
+176,5,Nicholas Gonzales,Customer Support,11/21/2018,101059.95,Dammam,Saudi Arabia
+177,2,Katherine May,Manager,9/9/2017,190016.77,Najran,Saudi Arabia
+178,2,Andre Wilkerson,Customer Support,3/10/2023,82510.33,Mecca,Saudi Arabia
+179,3,Johnny Perez,Data Analyst,10/8/2016,76858.8,Abha,Saudi Arabia
+180,3,Gerald Walton,Customer Support,2/18/2025,123184.95,Mecca,Saudi Arabia
+181,2,Todd Macias,Warehouse Specialist,5/1/2026,219156.33,Najran,Saudi Arabia
+182,3,Lucas Hampton,Manager,4/5/2019,62589.49,Buraidah,Saudi Arabia
+183,2,Derrick Martin,Manager,8/13/2017,118489.87,Jeddah,Saudi Arabia
+184,5,Kyle Bolton,Manager,12/3/2019,64379.83,Al Ahsa,Saudi Arabia
+185,2,Edward Torres,Sales Executive,10/29/2020,53673.79,Medina,Saudi Arabia
+186,3,Nancy Bolton,Data Analyst,7/2/2017,189954.77,Tabuk,Saudi Arabia
+187,3,Beverly Garcia,Customer Support,11/19/2024,181843.91,Buraidah,Saudi Arabia
+188,1,Christopher Brown,Manager,5/23/2022,211233.21,Abha,Saudi Arabia
+189,2,Emily Dean,Customer Support,9/22/2018,133363.64,Mecca,Saudi Arabia
+190,1,Carolyn Campbell,Data Analyst,8/18/2020,170678.66,Hail,Saudi Arabia
+191,5,Ann Davis,Operations Coordinator,4/15/2020,85887.24,Al Ahsa,Saudi Arabia
+192,3,Michael Williams,Data Analyst,6/8/2022,50575.63,Abha,Saudi Arabia
+193,5,Julia Ford,Customer Support,2/20/2019,63471.66,Buraidah,Saudi Arabia
+194,1,Anthony Schultz,Sales Executive,2/21/2025,205418.62,Medina,Saudi Arabia
+195,1,Carrie Hatfield,Data Analyst,1/23/2017,63407.11,Khobar,Saudi Arabia
+196,2,Kelly Anderson,Manager,4/7/2022,93170.3,Jeddah,Saudi Arabia
+197,4,Nancy Downs,Operations Coordinator,5/24/2024,211912.67,Jazan,Saudi Arabia
+198,3,Sherry Thomas,Sales Executive,7/2/2019,158301.31,Tabuk,Saudi Arabia
+199,3,Karen Long,Sales Executive,5/24/2023,107883.19,Dammam,Saudi Arabia
+200,2,Felicia Roberson,Sales Executive,5/22/2018,170322.23,Khobar,Saudi Arabia
+201,1,Andrew Dunn,Operations Coordinator,4/21/2026,133199.55,Tabuk,Saudi Arabia
+202,1,Anthony Price,Data Analyst,4/25/2020,144813.25,Najran,Saudi Arabia
+203,2,Erin Green,Sales Executive,3/15/2018,197873.89,Riyadh,Saudi Arabia
+204,4,Hannah Hardy,Customer Support,11/8/2024,201644.08,Khobar,Saudi Arabia
+205,5,Marissa Carlson,Warehouse Specialist,8/8/2017,80954.8,Medina,Saudi Arabia
+206,1,Theresa Atkins,Customer Support,10/5/2024,67945.66,Jeddah,Saudi Arabia
+207,2,William Johnson,Operations Coordinator,5/8/2020,100173.83,Jazan,Saudi Arabia
+208,3,Adam Pugh,Sales Executive,6/4/2023,58780.67,Jeddah,Saudi Arabia
+209,4,Jordan Reynolds,Sales Executive,7/29/2025,57184.78,Al Ahsa,Saudi Arabia
+210,3,Erika Mcdonald,Warehouse Specialist,4/9/2017,170624.68,Hail,Saudi Arabia
+211,1,Alexander Conrad,Warehouse Specialist,5/26/2021,115993.44,Khobar,Saudi Arabia
+212,3,Anne Fox,Manager,9/15/2019,195544.01,Mecca,Saudi Arabia
+213,4,Beverly Carter,Data Analyst,4/12/2024,135734.35,Abha,Saudi Arabia
+214,5,Robert White,Manager,7/6/2018,158170.41,Buraidah,Saudi Arabia
+215,3,Kathleen Lopez,Data Analyst,12/2/2021,200385.1,Riyadh,Saudi Arabia
+216,1,Timothy Francis,Customer Support,11/3/2017,169045.21,Tabuk,Saudi Arabia
+217,4,Dr. Gabriella Villa,Operations Coordinator,5/27/2025,129345.35,Hail,Saudi Arabia
+218,5,Stacy Gardner,Data Analyst,6/14/2024,129382.35,Dammam,Saudi Arabia
+219,2,Bonnie Dillon,Manager,10/21/2019,109766.49,Al Ahsa,Saudi Arabia
+220,5,Elizabeth Brown,Data Analyst,4/21/2021,154010.02,Khobar,Saudi Arabia
+221,5,Lance Lee,Operations Coordinator,12/14/2017,131664.93,Khobar,Saudi Arabia
+222,5,Timothy Hoffman,Customer Support,12/7/2025,126191.73,Al Ahsa,Saudi Arabia
+223,3,Megan Collins,Warehouse Specialist,10/15/2023,113835.59,Tabuk,Saudi Arabia
+224,2,Cynthia Walters,Customer Support,6/24/2022,72046.34,Buraidah,Saudi Arabia
+225,1,Joshua Wilson,Customer Support,6/2/2024,122083.38,Tabuk,Saudi Arabia
+226,3,Steven Turner,Customer Support,2/19/2023,144751.16,Mecca,Saudi Arabia
+227,4,Edward Payne,Manager,5/26/2017,178598.47,Dammam,Saudi Arabia
+228,4,Lori Williams,Warehouse Specialist,7/17/2017,105323.84,Hail,Saudi Arabia
+229,5,Robert Martin DDS,Customer Support,3/24/2025,86615.94,Hail,Saudi Arabia
+230,3,Jacob Horton,Data Analyst,7/13/2022,193125.69,Khobar,Saudi Arabia
+231,5,Brian Kelley,Warehouse Specialist,5/11/2020,138309.24,Buraidah,Saudi Arabia
+232,4,Thomas Le,Data Analyst,6/15/2020,205221.69,Jazan,Saudi Arabia
+233,2,Patrick Lam,Operations Coordinator,11/24/2023,99614.25,Najran,Saudi Arabia
+234,4,Timothy Brown,Data Analyst,1/20/2022,122288.34,Riyadh,Saudi Arabia
+235,3,Sandra Cochran,Customer Support,6/24/2017,154052.46,Taif,Saudi Arabia
+236,3,Melissa Smith,Customer Support,2/25/2025,142839.56,Jazan,Saudi Arabia
+237,5,Seth Shannon,Customer Support,5/24/2025,59250.47,Taif,Saudi Arabia
+238,1,Ariel Alvarado,Warehouse Specialist,9/13/2020,181418.62,Medina,Saudi Arabia
+239,5,Luke Crawford,Operations Coordinator,12/19/2020,83281.7,Medina,Saudi Arabia
+240,1,Renee Gardner,Sales Executive,8/25/2019,218124.91,Riyadh,Saudi Arabia
+241,1,Catherine Mccormick,Operations Coordinator,6/15/2024,106496.29,Mecca,Saudi Arabia
+242,3,Michael Mcintosh,Sales Executive,7/8/2021,179835.97,Taif,Saudi Arabia
+243,2,Jacqueline Mitchell,Customer Support,8/7/2022,209388.43,Najran,Saudi Arabia
+244,5,Sara Woodward,Manager,9/3/2017,112081.6,Abha,Saudi Arabia
+245,3,Stephen Cox,Customer Support,3/30/2022,59135.16,Najran,Saudi Arabia
+246,2,Heather Mcintosh,Customer Support,4/25/2026,102775.09,Al Ahsa,Saudi Arabia
+247,4,Sara Cooper,Data Analyst,2/22/2020,114764.34,Buraidah,Saudi Arabia
+248,1,Lori Ellis,Operations Coordinator,8/21/2022,182186.21,Najran,Saudi Arabia
+249,5,Nicole Martinez,Manager,7/20/2019,67372.9,Dammam,Saudi Arabia
+250,5,Walter Novak,Sales Executive,1/11/2021,94386.88,Medina,Saudi Arabia
+251,5,Benjamin Silva,Manager,8/11/2023,47334.49,Al Ahsa,Saudi Arabia
+252,5,Cynthia Benitez,Operations Coordinator,11/30/2025,92193.56,Yanbu,Saudi Arabia
+253,4,Melissa Park,Customer Support,5/9/2020,73618.14,Dammam,Saudi Arabia
+254,2,Lori Woods,Data Analyst,2/6/2019,72468.25,Khobar,Saudi Arabia
+255,3,Patrick Perez MD,Sales Executive,4/7/2023,86190.89,Taif,Saudi Arabia
+256,1,William Wilcox,Operations Coordinator,12/13/2023,157679.92,Mecca,Saudi Arabia
+257,3,Joseph Davis,Warehouse Specialist,12/19/2019,92335.27,Medina,Saudi Arabia
+258,3,Amber Khan,Data Analyst,8/20/2017,71172.89,Khobar,Saudi Arabia
+259,1,Luke Ortiz,Data Analyst,5/11/2023,213214.45,Mecca,Saudi Arabia
+260,1,David Washington,Warehouse Specialist,5/29/2019,69479.99,Jazan,Saudi Arabia
+261,4,Valerie Welch,Warehouse Specialist,5/21/2019,170493.68,Buraidah,Saudi Arabia
+262,2,Judy Harris,Operations Coordinator,11/12/2016,130159.3,Riyadh,Saudi Arabia
+263,2,Heather Jordan,Warehouse Specialist,4/23/2018,135889.61,Najran,Saudi Arabia
+264,1,Thomas Jackson,Warehouse Specialist,3/12/2018,175870.47,Mecca,Saudi Arabia
+265,2,Toni Thornton,Data Analyst,6/9/2023,181257.08,Hail,Saudi Arabia
+266,4,Evan Schultz,Manager,6/9/2022,107730.37,Dammam,Saudi Arabia
+267,4,Brenda Watson,Operations Coordinator,12/10/2017,76833.99,Yanbu,Saudi Arabia
+268,3,Michael Nguyen,Data Analyst,10/6/2017,118856.54,Khobar,Saudi Arabia
+269,1,Sue Thomas,Sales Executive,8/4/2017,126618.59,Riyadh,Saudi Arabia
+270,1,Dr. Megan Nolan,Warehouse Specialist,2/5/2025,158953.13,Medina,Saudi Arabia
+271,1,Eric Orozco,Data Analyst,11/21/2017,79355.78,Riyadh,Saudi Arabia
+272,3,Mark Rice,Warehouse Specialist,2/10/2017,92116.04,Taif,Saudi Arabia
+273,1,Michelle Bennett,Sales Executive,3/18/2024,45024.42,Tabuk,Saudi Arabia
+274,5,David Baldwin,Warehouse Specialist,5/22/2022,188160.73,Hail,Saudi Arabia
+275,2,Maria Vargas,Warehouse Specialist,7/31/2024,63955.31,Taif,Saudi Arabia
+276,3,Shawn Bell,Customer Support,9/30/2016,180262.79,Riyadh,Saudi Arabia
+277,4,Antonio Howard,Data Analyst,10/6/2020,150751.92,Abha,Saudi Arabia
+278,1,Jay Villegas,Sales Executive,12/18/2024,149972.62,Taif,Saudi Arabia
+279,5,Evan Parker,Data Analyst,8/6/2022,119493.73,Jeddah,Saudi Arabia
+280,2,Michelle Montgomery,Manager,8/9/2023,162711.35,Al Ahsa,Saudi Arabia
+281,2,Gloria Scott,Sales Executive,12/13/2021,116769.26,Tabuk,Saudi Arabia
+282,5,Brian Daniels,Operations Coordinator,7/21/2025,115287.13,Khobar,Saudi Arabia
+283,5,Thomas Thomas,Manager,3/19/2023,96066.36,Medina,Saudi Arabia
+284,3,Gregory Anthony,Warehouse Specialist,11/5/2020,191615.58,Hail,Saudi Arabia
+285,3,Dwayne Hernandez,Customer Support,12/22/2021,147924.31,Riyadh,Saudi Arabia
+286,4,Casey Diaz,Warehouse Specialist,11/19/2019,180656.5,Hail,Saudi Arabia
+287,3,Michelle Arnold,Manager,10/8/2016,204456.11,Al Ahsa,Saudi Arabia
+288,3,Tristan Murphy,Manager,1/5/2017,147988.03,Najran,Saudi Arabia
+289,2,Andrew Becker,Sales Executive,4/28/2018,115225.99,Dammam,Saudi Arabia
+290,2,Janet Sullivan PhD,Operations Coordinator,6/20/2023,61136.14,Al Ahsa,Saudi Arabia
+291,2,Jessica Turner,Sales Executive,11/14/2016,69780.42,Dammam,Saudi Arabia
+292,5,Ryan Burns,Warehouse Specialist,8/21/2025,106690.72,Jazan,Saudi Arabia
+293,4,Paige Gonzalez,Sales Executive,3/12/2018,,Najran,Saudi Arabia
+294,4,Taylor Wilkins,Customer Support,7/3/2019,85093.71,Najran,Saudi Arabia
+295,3,Meghan Williams,Operations Coordinator,7/23/2024,88091.93,Dammam,Saudi Arabia
+296,5,Kelly Williams,Operations Coordinator,5/9/2017,87476.68,Yanbu,Saudi Arabia
+297,5,Michelle Freeman,Data Analyst,1/20/2021,79193.23,Buraidah,Saudi Arabia
+298,3,Melissa Howe,Customer Support,6/11/2025,174588.06,Mecca,Saudi Arabia
+299,4,Kelsey Wells,Sales Executive,8/7/2022,79712.06,Jazan,Saudi Arabia
+300,3,Kristopher Michael,Sales Executive,2/16/2022,112527.14,Riyadh,Saudi Arabia
