@@ -23,6 +23,7 @@ select p.DepartmentName , sum(f.NetAmount) as NetAmount
 from gold.fact_sales f
 left join gold.dim_product p
 on f.Product_Key = p.Product_Key
+where f.PaymentStatus = 'PAID'
 group by p.DepartmentName
 order by NetAmount desc
 
@@ -34,6 +35,7 @@ select p.Brand , sum(f.NetAmount) as NetAmount
 from gold.fact_sales f
 left join gold.dim_product p
 on f.Product_Key = p.Product_Key
+where f.PaymentStatus = 'PAID'
 group by p.Brand
 order by NetAmount desc
 
@@ -43,6 +45,7 @@ select p.ProductName , sum(f.NetAmount) as NetAmount
 from gold.fact_sales f
 left join gold.dim_product p
 on f.Product_Key = p.Product_Key
+where f.PaymentStatus = 'PAID'
 group by p.ProductName
 order by NetAmount desc
 

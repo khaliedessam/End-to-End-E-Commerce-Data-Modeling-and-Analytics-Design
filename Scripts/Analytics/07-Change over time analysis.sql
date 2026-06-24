@@ -24,7 +24,8 @@ select
 from gold.fact_sales f
 left join gold.dim_date d
 on f.DateKey = d.DateKey
-where d.DateKey <> -1
+where d.DateKey <> -1 and  f.PaymentStatus = 'PAID'
+
 group by d.Year
 order by Total_Year_Revenue desc
 
@@ -34,7 +35,7 @@ select
 from gold.fact_sales f
 left join gold.dim_date d
 on f.DateKey = d.DateKey
-where d.DateKey <> -1
+where d.DateKey <> -1 and  f.PaymentStatus = 'PAID'
 group by d.Year , d.Month
 order by Total_Year_Revenue desc
 
@@ -44,17 +45,17 @@ select
 from gold.fact_sales f
 left join gold.dim_date d
 on f.DateKey = d.DateKey
-where d.DateKey <> -1
+where d.DateKey <> -1 and  f.PaymentStatus = 'PAID'
 group by d.Year , d.Quarter
 order by Total_Year_Revenue desc
 
---Orders by Year
+--Orders by Year whether it was paid,refunded and pending 
 select
         d.Year , count(distinct f.OrderID) as Total_Year_Orders
 from gold.fact_sales f
 left join gold.dim_date d
 on f.DateKey = d.DateKey
-where d.DateKey <> -1
+where d.DateKey <> -1 
 group by d.Year
 order by Total_Year_Orders desc
 

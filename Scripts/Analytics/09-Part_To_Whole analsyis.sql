@@ -25,6 +25,7 @@ select
 from gold.fact_sales f
 left join gold.dim_product p
 on f.Product_Key = p.Product_Key
+where f.PaymentStatus = 'PAID'
 group by p.DepartmentName
  )
 
@@ -47,6 +48,7 @@ select
 from gold.fact_sales f
 left join gold.dim_product p
 on f.Product_Key = p.Product_Key
+where f.PaymentStatus = 'PAID'
 group by p.Brand )
 
 select

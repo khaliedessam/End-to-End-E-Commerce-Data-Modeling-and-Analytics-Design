@@ -1,25 +1,34 @@
 /*
-==========================================================
-Stored Procedure: Load Silver Layer (Bronze -> Silver)
-==========================================================
+===================================================================================================
+Stored Procedure: Load Silver Layer Tables
+===================================================================================================
 Script Purpose:
-       This stored procedure performs the ETL (Extract, Transform, Load) process to
-       populate the 'silver' schema tables from the 'bronze' schema.
+       This stored procedure loads cleaned and standardized data from the Bronze
+       Layer into the Silver Layer using a full refresh strategy.
 
-Actoins Performed:
-       -Truncate Silver Tables.
-	   -Inserts transformed and cleansed data from Bronze into Silver tables.
+       The procedure transforms raw Bronze data by:
+       - Removing duplicate records using ROW_NUMBER().
+       - Filtering out records with missing business keys.
+       - Standardizing text values using TRIM(), UPPER(), and LOWER().
+       - Converting raw date and numeric values into proper data types.
+       - Handling invalid values such as negative quantities, prices, salaries,
+         and out-of-range ratings.
+       - Calculating derived columns such as OrderDetail TotalAmount.
 
-Parameters:
-	   None.
-	   This stored procedure does not accept any parameters or return values.
-	
-Usage Example:
-       EXEC Silver.load_silver;
-============================================================
+       Each Silver table is truncated before loading to ensure the layer always
+       represents the latest cleaned version of the raw source data.
+
+       The @run_id parameter links this Silver load to the main ETL pipeline
+       execution for monitoring and traceability.
+
+Usage:
+       This procedure is executed by etl.run_pipeline after the Silver Layer
+       has been loaded successfully.
+===================================================================================================
 */
 
-create or alter procedure silver.load_silver as
+create or alter procedure silver.load_silver
+         @run_id UNIQUEIDENTIFIER   as
  begin
 
 TRUNCATE TABLE silver.Customer;
@@ -363,4 +372,6 @@ from bronze.Department
 end
 
 ----Excecute Stored Procedure For Bronze Layer
-EXEC silver.load_silver
+DECLARE @run_id UNIQUEIDENTIFIER = NEWID();
+
+EXEC silver.load_silver @run_id;

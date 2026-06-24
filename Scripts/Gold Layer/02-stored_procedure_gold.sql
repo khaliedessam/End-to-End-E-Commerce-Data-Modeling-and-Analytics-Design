@@ -21,10 +21,10 @@ Usage:
 ===================================================================================================
 */
 
-CREATE OR ALTER PROCEDURE gold.load_gold AS 
+CREATE OR ALTER PROCEDURE gold.load_gold 
+      @run_id UNIQUEIDENTIFIER  AS 
 begin
 
-print '>> Inserting Data Into: gold.dim_customer';
 
 TRUNCATE TABLE gold.dim_customer;
 INSERT INTO gold.dim_customer (
@@ -39,36 +39,6 @@ SELECT
     Phone 
 FROM silver.Customer;
 
-----------------------------------------------------------------
-
-print '>> Inserting Data Into: gold.dim_CustomerAddress';
-
-TRUNCATE TABLE gold.dim_CustomerAddress;
-INSERT INTO gold.dim_CustomerAddress (
-  AddressID,
-  CustomerID,
-  AddressType,
-  AddressLine1,
-  AddressLine2,
-  City,
-  START_DATE,
-  END_DATE,
-  Is_Current )
-
-  SELECT 
-          AddressID,
-          CustomerID,
-          AddressType,
-          AddressLine1,
-          AddressLine2,
-          City,
-          '2020-01-01'as START_DATE,
-          NULL as END_DATE,
-          1 as Is_Current
-FROM Silver.CustomerAddress
-
-------------------------------------------------------------------
-print '>> Inserting Data Into: gold.dim_product';
 
 TRUNCATE TABLE gold.dim_product;
 INSERT INTO gold.dim_product
@@ -89,7 +59,6 @@ ON p.DepartmentID = d.DepartmentID;
 ----decide the date range , Use the minimum and maximum dates across silver tables.
 ----min_date = '2016-07-01' and max_date = '2026-05-28'
 
-print '>> Inserting Data Into: gold.dim_date';
 
 TRUNCATE TABLE gold.dim_date;
 WITH DateSeries AS (
@@ -126,7 +95,6 @@ FROM DateSeries
 OPTION (MAXRECURSION 0) --Without it, SQL Server stops recursion after 100 iterations by default.
 
 ----------------------------------------------------------------
-print '>> Inserting Data Into: gold.dim_PaymentMethod';
 
 TRUNCATE TABLE gold.dim_PaymentMethod;
 INSERT INTO gold.dim_PaymentMethod
@@ -136,7 +104,6 @@ SELECT
 FROM silver.PaymentMethod;
 
 -------------------------------------------------------------------------------
-print '>> Inserting Data Into: gold.dim_ShippingCompany';
 
 TRUNCATE TABLE gold.dim_ShippingCompany;
 INSERT INTO gold.dim_ShippingCompany
@@ -149,7 +116,6 @@ FROM silver.ShippingCompany;
 ---Create Fact Table: (gold.fact_sales) (based on 3 tables Orders,OrderDetail and PaymentTransaction). 
 ---The grain of factSales is one row per product inside an order.
 
-print '>> Inserting Data Into: gold.fact_sales';
 
 TRUNCATE TABLE gold.fact_sales;
 INSERT INTO gold.fact_sales
@@ -198,5 +164,7 @@ and ( o.OrderDate < cast(a.END_DATE as DATE) or  a.END_DATE IS NULL )
 
 end
 
-----Excecute Stored Procedure For Gold Layer
-EXEC gold.load_gold
+---------------------------------Execution of Stored Procedure-----
+
+DECLARE @run_id UNIQUEIDENTIFIER = NEWID();
+EXEC gold.load_gold  @run_id

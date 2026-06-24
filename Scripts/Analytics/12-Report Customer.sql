@@ -3,25 +3,32 @@
 Customer Report
 ===============================================================================
 Purpose:
-    - This report consolidates key customer metrics and behaviors
+    - This report consolidates key customer metrics and purchasing behaviors
+      based on completed (PAID) transactions only.
 
 Highlights:
-    1. Gathers essential fields such as names, ages, and transaction details.
-	2. Segments customers into categories (VIP, Regular, New) and age groups.
+    1. Gathers essential customer and sales information from paid orders.
+    2. Segments customers into categories (VIP, Regular, New).
     3. Aggregates customer-level metrics:
-	   - total orders
-	   - total sales
-	   - total quantity purchased
-	   - total products
-	   - lifespan (in months)
+       - total completed orders
+       - total sales revenue
+       - total quantity purchased
+       - total products purchased
+       - customer lifespan (in months)
     4. Calculates valuable KPIs:
-	    - recency (months since last order)
-		- average order value (total_sales / total_orders)
-		- average monthly spend
+       - recency (months since last paid order)
+       - average order value (total_sales / total_orders)
+       - average monthly spend
+
+Notes:
+    - Only transactions with PaymentStatus = 'PAID' are included.
+    - Pending, Failed, and Refunded transactions are excluded from all
+      calculations to ensure metrics reflect actual realized revenue.
 ===============================================================================
 */
 
 
+select * from gold.dim_customer
 /*------------------------------------------------------------------------------
 1) Base Query: Gathers essential fields from tables 
 -------------------------------------------------------------------------------*/
@@ -46,7 +53,7 @@ left join gold.dim_customer c
 on f.Customer_Key = c.Customer_Key
 left join gold.dim_date d
 on f.DateKey = d.DateKey
-where FullDate is not null ),
+where FullDate is not null and f.PaymentStatus = 'PAID' ),
 
 /*---------------------------------------------------------------------------
 2) Customer Aggregations: Summarizes key metrics at the customer level
@@ -70,8 +77,8 @@ select
          Customer_Key,
 		 CustomerID,
 		 CustomerName,
-		 CASE WHEN Total_Sales >= 1250000 THEN 'Vip'
-            WHEN Total_Sales >= 760000 THEN 'Regular'
+		 CASE WHEN Total_Sales >= 30000 THEN 'Vip'
+            WHEN Total_Sales >= 10000 THEN 'Regular'
             ELSE 'New'
        END AS Customer_Segment,
 	   Last_Order_Date,
@@ -81,13 +88,13 @@ select
 	   Total_Sales,
 	   Total_Quantity,
 	   LifeSpan,
-	   round(cast(Total_Sales / Total_Orders as float),2) as Avg_Order_Value,
-       round(cast(Total_Sales / LifeSpan as float),2) as Avg_Monthly_Spend
+	   round(cast(Total_Sales as float) / nullif(Total_Orders,0 ),2) as Avg_Order_Value,
+       round(cast(Total_Sales as float) / nullif(LifeSpan,0) ,2) as Avg_Monthly_Spend
 from Customer_Aggregation
 
 
 
--------------------------------------------------------------
 
 
-select * from gold.report_customers
+
+

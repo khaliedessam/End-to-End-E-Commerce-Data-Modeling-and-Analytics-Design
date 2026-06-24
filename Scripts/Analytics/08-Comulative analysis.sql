@@ -20,8 +20,8 @@ select
                sum(f.NetAmount) as NetAmount
 from  gold.fact_sales f
 left join gold.dim_date d
-on f.DateKey = d.DateKey
-where FullDate is not null
+on f.DateKey = d.DateKey and f.PaymentStatus = 'PAID'
+where FullDate is not null 
 group by DATEFROMPARTS(Year,Month,1)
 order by DATEFROMPARTS(Year,Month,1) 
 
@@ -34,7 +34,7 @@ select      DATEFROMPARTS(Year,1,1) as Order_Date,   --grouping all transactions
 from  gold.fact_sales f
 left join gold.dim_date d
 on f.DateKey = d.DateKey
-where FullDate is not null
+where FullDate is not null and f.PaymentStatus = 'PAID'
 group by DATEFROMPARTS(Year,1,1)
 )
 select

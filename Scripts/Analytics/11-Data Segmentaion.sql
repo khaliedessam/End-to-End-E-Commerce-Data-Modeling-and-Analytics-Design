@@ -18,6 +18,7 @@ WITH Customer_Revenue AS (
 select Customer_Key,
        sum(NetAmount) as Total_Revenue
 from gold.fact_sales
+where PaymentStatus = 'PAID'
 group by Customer_Key
   )
 
@@ -39,14 +40,14 @@ select c.Customer_Key,
 from gold.fact_sales f
 left join gold.dim_customer c
 on f.Customer_Key = c.Customer_Key
+where f.PaymentStatus = 'PAID'
 group by c.Customer_Key,c.CustomerName )
-
 select
        Customer_Key,
        CustomerName,
        Total_Spending,
-       CASE WHEN Total_Spending >= 1250000 THEN 'Vip'
-            WHEN Total_Spending >= 760000 THEN 'Regular'
+       CASE WHEN Total_Spending >= 30000 THEN 'Vip'
+            WHEN Total_Spending >= 10000 THEN 'Regular'
             ELSE 'New'
        END AS Customer_Segment
 from Customer_Segment
@@ -61,6 +62,7 @@ select c.Customer_Key,
 from gold.fact_sales f
 left join gold.dim_customer c
 on f.Customer_Key = c.Customer_Key
+where f.PaymentStatus = 'PAID'
 group by c.Customer_Key,c.CustomerName ),
 
  Total_Customer AS (
@@ -68,8 +70,8 @@ select
        Customer_Key,
        CustomerName,
        Total_Spending,
-       CASE WHEN Total_Spending >= 1250000 THEN 'Vip'
-            WHEN Total_Spending >= 760000 THEN 'Regular'
+       CASE WHEN Total_Spending >= 30000 THEN 'Vip'
+            WHEN Total_Spending >= 10000 THEN 'Regular'
             ELSE 'New'
        END AS Customer_Segment
 from Customer_Segment )
@@ -103,6 +105,7 @@ select
 from gold.fact_sales f
 left join gold.dim_product p
 on f.Product_Key = p.Product_Key
+where f.PaymentStatus = 'PAID'
 group by p.ProductID,p.ProductName ),
 
  Revenue_Percentage_Cumulative AS (
@@ -154,6 +157,7 @@ select
 from gold.fact_sales f
 left join gold.dim_date d
 on f.DateKey = d.DateKey
+where f.PaymentStatus = 'PAID'
 group by f.Customer_Key
 order by Monetary desc
 
@@ -168,14 +172,15 @@ select
 from gold.fact_sales f
 left join gold.dim_product p
 on f.Product_Key = p.Product_Key
+where f.PaymentStatus = 'PAID'
 group by p.DepartmentID,p.DepartmentName )
 
 select
           DepartmentID,
           DepartmentName,
           Revenue,
-          CASE WHEN Revenue >= 800 THEN 'High Reveune'
-               WHEN Revenue >= 750 THEN 'Mid Reveune'
+          CASE WHEN Revenue >= 7 THEN 'High Reveune'
+               WHEN Revenue >= 4 THEN 'Mid Reveune'
                ELSE 'Low Revenue'
           END AS 'Department_Segment'
 from Department_Segment

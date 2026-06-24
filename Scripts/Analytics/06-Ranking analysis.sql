@@ -23,6 +23,7 @@ select top 5 p.ProductName , sum(f.NetAmount) as Total_Revenue
 from gold.fact_sales f
 left join gold.dim_product p
 on f.Product_Key = p.Product_Key
+where f.PaymentStatus = 'PAID'
 group by ProductName
 order by Total_Revenue desc
 
@@ -32,6 +33,7 @@ select top 5 p.DepartmentName , sum(f.NetAmount) as Total_Revenue
 from gold.fact_sales f
 left join gold.dim_product p
 on f.Product_Key = p.Product_Key
+where f.PaymentStatus = 'PAID'
 group by DepartmentName
 order by Total_Revenue desc
 
@@ -41,6 +43,7 @@ select top 5 p.Brand , sum(f.NetAmount) as Total_Revenue
 from gold.fact_sales f
 left join gold.dim_product p
 on f.Product_Key = p.Product_Key
+where f.PaymentStatus = 'PAID'
 group by Brand
 order by Total_Revenue desc
 
@@ -50,6 +53,7 @@ select top 5 p.ProductName , sum(f.NetAmount) as Total_Revenue
 from gold.fact_sales f
 left join gold.dim_product p
 on f.Product_Key = p.Product_Key
+where f.PaymentStatus = 'PAID'
 group by ProductName
 order by Total_Revenue asc
 
@@ -59,6 +63,7 @@ select top 10 c.CustomerName , sum(f.NetAmount) as Total_Revenue
 from gold.fact_sales f
 left join gold.dim_customer c
 on f.Customer_Key = c.Customer_Key
+where f.PaymentStatus = 'PAID'
 group by CustomerName
 order by Total_Revenue desc
 
@@ -68,6 +73,16 @@ select top 3 c.Customer_Key , c.CustomerName , count(distinct f.OrderID) as Tota
 from gold.fact_sales f
 left join gold.dim_customer c
 on f.Customer_Key = c.Customer_Key
+group by c.Customer_Key,c.CustomerName
+order by Total_Orders desc
+
+-- Find the Highest 3 customers with the highest orders placed and completed the most purchases
+
+select top 3 c.Customer_Key , c.CustomerName , count(distinct f.OrderID) as Total_Orders
+from gold.fact_sales f
+left join gold.dim_customer c
+on f.Customer_Key = c.Customer_Key
+where f.PaymentStatus = 'PAID'
 group by c.Customer_Key,c.CustomerName
 order by Total_Orders desc
 

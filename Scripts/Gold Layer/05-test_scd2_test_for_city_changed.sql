@@ -5,7 +5,7 @@ SCD Type 2 Testing – Customer City Change
 
 Purpose:
 This test validates the SCD Type 2 implementation on the
-Customer Dimension (gold.dim_customer).
+CustomerAddress Dimension (gold.dim_CustomerAddress).
 
 Test Steps:
 1. Display the current customer record from the Gold layer.
@@ -24,7 +24,7 @@ Test Steps:
 
 Expected Result:
 The same CustomerID should appear twice in
-gold.dim_customer:
+gold.dim_CustomerAddress:
    - Historical version (old city)
    - Current version (new city)
 
@@ -46,8 +46,8 @@ set City = 'ABHA'
 where AddressID = 3
 
 --3. Execute the SCD2 stored procedure.
-
-EXEC gold.load_dim_CustomerAddress_Scd2
+declare @run_id UNIQUEIDENTIFIER = NEWID();
+EXEC gold.load_dim_CustomerAddress_Scd2  @run_id
 
 --4. Verify that.
 

@@ -3,24 +3,29 @@
 Product Report
 ===============================================================================
 Purpose:
-    - This report consolidates key product metrics and behaviors.
+    - This report consolidates key product metrics and sales performance
+      based on completed (PAID) transactions only.
 
 Highlights:
-    1. Gathers essential fields such as product name, category, subcategory, and cost.
-    2. Segments products by revenue to identify High-Performers, Mid-Range, or Low-Performers.
+    1. Gathers essential product and sales information from paid orders.
+    2. Evaluates product performance and revenue contribution.
     3. Aggregates product-level metrics:
-       - total orders
-       - total sales
+       - total completed orders
+       - total sales revenue
        - total quantity sold
-       - total customers (unique)
-       - lifespan (in months)
+       - total customers
+       - product lifespan (in months)
     4. Calculates valuable KPIs:
-       - recency (months since last sale)
-       - average order revenue (AOR)
+       - recency (months since last paid sale)
+       - average order value (total_sales / total_orders)
        - average monthly revenue
+
+Notes:
+    - Only transactions with PaymentStatus = 'PAID' are included.
+    - Pending, Failed, and Refunded transactions are excluded from all
+      calculations to ensure metrics reflect actual realized revenue.
 ===============================================================================
 */
-
 
 /*------------------------------------------------------------------------------
 1) Base Query: Gathers essential fields from tables 
@@ -46,7 +51,7 @@ left join gold.dim_product p
 on f.Product_Key = p.Product_Key
 left join gold.dim_date d
 on f.DateKey = d.DateKey
-where FullDate is not null ),
+where FullDate is not null and f.PaymentStatus = 'PAID' ),
 
 /*------------------------------------------------------------------------
 2) Product Aggregationn: Summarizes key metrics at the product level
@@ -80,11 +85,10 @@ select
          Last_Order_Date,
          LifeSpan,
          DATEDIFF(month,Last_Order_Date,GETDATE()) as Recency_In_Months,
-         round(cast(Total_Sales / Total_Orders as float),2) as Avg_Order_Value,
-         round(cast(Total_Sales / LifeSpan as float),2) as Avg_Monthly_Spend       
+         round(cast(Total_Sales as float) / nullif(Total_Orders,0),2) as Avg_Order_Value,
+         round(cast(Total_Sales as float) / nullif(LifeSpan,0),2) as Avg_Monthly_Spend       
 from Product_Aggregation
 
 
-------------------------------------------------------------------------------------------------
-select * from gold.report_products
+
 

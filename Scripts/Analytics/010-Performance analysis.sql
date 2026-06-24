@@ -30,6 +30,7 @@ left join gold.dim_date d
 on f.DateKey = d.DateKey
 left join gold.dim_product p
 on f.Product_key = p.Product_Key
+where f.PaymentStatus = 'PAID'
 group by d.Year,p.ProductName
    )
 
@@ -65,6 +66,7 @@ left join gold.dim_date d
 on f.DateKey = d.DateKey
 left join gold.dim_product p
 on f.Product_key = p.Product_Key
+where f.PaymentStatus = 'PAID'
 group by d.Year,p.DepartmentName
    )
 

@@ -15,6 +15,7 @@ having count(*) > 1
 select * from gold.fact_sales
 where Customer_Key is null
 or    Product_key is null
+or    Address_Key is null
 or    PaymentMethod_Key is null
 or    Shipping_Key is null
 or    DateKey is null              ---- I have NULL values in DateKey column due to missing order date of some orders
