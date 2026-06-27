@@ -1,33 +1,23 @@
 /*
-===================================================================================================
-Stored Procedure: Load Bronze Layer Tables with File-Level Monitoring
-===================================================================================================
+==============================================================================
+Stored Procedure: Load Bronze Layer (Source -> Bronze)
+
 Script Purpose:
-       This stored procedure loads raw data from CSV files into the Bronze Layer
-       using a full refresh strategy. Each Bronze table is truncated before loading
-       to prevent duplicate records from previous ETL executions.
+      This stored procedure loads data into the 'bronze' schema from external CSV files.
 
-       The procedure includes file-level monitoring by recording the execution
-       details of each CSV load into etl.file_load_log.
+Actions Perofrmed:
+      -Truncate the bronze tables before loading data
+      -use the 'Bulk insert' command to load data from csv files to bronze tables.
 
-       For each file:
-       - A loading status is recorded before the BULK INSERT operation.
-       - The target Bronze table is refreshed using TRUNCATE TABLE.
-       - Data is loaded from the source CSV file using BULK INSERT.
-       - The number of inserted rows is captured.
-       - The execution status is updated as Success, Warning, or Failed.
-       - Error messages are stored when a load failure occurs.
+Parameters:
+      None.
+      This stored procedure does not accept any parameters or return any values.
 
-       The @run_id parameter links all file loads to a specific ETL pipeline
-       execution, allowing complete traceability between pipeline-level and
-       file-level monitoring.
-
-Usage:
-       This procedure is executed through etl.run_pipeline as part of the
-       automated ETL workflow and should not be executed manually during
-       regular scheduled operations.
-===================================================================================================
+Usage Example:
+      EXEC bronze.load_bronze;
+==============================================================================
 */
+
 
 
 
