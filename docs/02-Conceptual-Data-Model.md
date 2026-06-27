@@ -70,11 +70,6 @@ The conceptual model follows these principles:
 
 ## Conceptual ERD
 
-> Place the following image inside the repository:
-
-```text
-images/conceptual_erd.png
-```
 
 ![Conceptual Data Model](images/Conceptual%20Data%20Modeling.drawio.png)
 ---
