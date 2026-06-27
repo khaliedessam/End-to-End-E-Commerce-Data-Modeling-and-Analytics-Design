@@ -139,5 +139,16 @@ EXEC etl.run_pipeline;
 
 ## ETL Scheduling with SQL Server Agent
 
-To automate ETL execution, SQL Server Agent runs the Master ETL Pipeline job, which executes EXEC etl.run_pipeline:
+To automate the ETL pipeline, SQL Server Agent is used to orchestrate the execution of the Master ETL Pipeline job. The job executes the etl.run_pipeline stored procedure, which loads data through the Bronze, Silver, and Gold layers in sequence.
+<p align="center">
+    <img src="images/sql_server_agent_job_step.png" width="900">
+</p>
+
+<p align="center">
+    <img src="images/sql_server_agent_test.png" width="900">
+</p>
+
+<p align="center">
+    <img src="images/sql_server_agent_history.png" width="1000">
+</p>
 
