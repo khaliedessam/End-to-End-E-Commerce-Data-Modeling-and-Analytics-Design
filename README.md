@@ -4,9 +4,12 @@
 ![Analytics](https://img.shields.io/badge/Analytics-SQL-orange)
 ![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow)
 
-##📖 Project Overview
+## 📖 Project Overview
+
 This project demonstrates the end-to-end development of an enterprise-grade data platform, covering the complete data engineering lifecycle—from business process analysis and relational database design to the implementation of a modern Data Warehouse using the Medallion Architecture (Bronze, Silver, and Gold).
+
 The solution includes a fully normalized OLTP database to ensure data integrity and consistency, followed by automated ETL/ELT pipelines that perform full data loads, data validation, cleansing, and transformation to prepare high-quality data for analytics.
+
 The analytical layer is built using dimensional modeling and a star schema, providing a scalable, high-performance foundation for business intelligence to generating actionable insights.
 
 ## Project Development Workflow
