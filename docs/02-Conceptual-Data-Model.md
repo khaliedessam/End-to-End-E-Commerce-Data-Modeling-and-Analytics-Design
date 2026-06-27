@@ -7,6 +7,11 @@ The conceptual data model represents the first stage of the database design proc
 At this stage, the focus is on understanding the business rather than the physical implementation. The model identifies the major entities involved in the sales process and illustrates how they interact without considering database-specific details such as data types, indexes, or constraints.
 
 ---
+## Conceptual ERD
+
+
+![Conceptual Data Model](images/Conceptual%20Data%20Modeling.drawio.png)
+---
 
 ## Objectives
 
@@ -68,17 +73,6 @@ The conceptual model follows these principles:
 
 ---
 
-## Conceptual ERD
-
-> Place the following image inside the repository:
-
-```text
-images/conceptual_erd.png
-```
-
-![Conceptual ERD](../images/conceptual_erd.png)
-
----
 
 ## Next Step
 
