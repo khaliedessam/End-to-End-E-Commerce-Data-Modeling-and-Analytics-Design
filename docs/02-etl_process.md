@@ -1,6 +1,6 @@
 # ⚙️ ETL Process
 
-This project implements a complete **Extract, Transform, Load (ETL)** pipeline following the **Medallion Architecture** (Bronze → Silver → Gold). The pipeline ingests raw operational data from multiple CSV files, applies data quality and business transformation rules, and produces an analytics-ready Sales Data Mart.
+This project implements a complete **Extract, Transform, Load (ETL)** pipeline following the **Medallion Architecture** (Bronze → Silver → Gold). The pipeline ingests raw operational data from multiple CSV files, applies data quality and business transformation rules, and produces an analytics-ready to generate actionable insights.
 
 ---
 
@@ -130,14 +130,14 @@ ROW_NUMBER() OVER (
 ### Fact
 - FactSales
 
-### Features
-- Star Schema
-- Surrogate Keys
-- Business Rules
-- Historical Tracking (SCD Type 2)
 
 ## Pipeline Execution
 
 ```sql
 EXEC etl.run_pipeline;
 ```
+
+## ETL Scheduling with SQL Server Agent
+
+To automate ETL execution, SQL Server Agent runs the Master ETL Pipeline job, which executes EXEC etl.run_pipeline:
+
