@@ -163,5 +163,5 @@ To automate the ETL pipeline, SQL Server Agent is used to orchestrate the execut
 4-ETL tables logs –  ETL pipeline records every execution in an ETL Log table, capturing the status of each process, execution timestamps, and any error messages.
 
 <p align="center">
-    <img src="images/etl_tables_logs.png" width="1000">
+    <img src="images/etl_tables_logs.png" alt="ETL Execution Log" width="1000">
 </p>
