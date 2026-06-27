@@ -101,7 +101,6 @@ The Data Warehouse is implemented in **SQL Server** and orchestrated through aut
 - ETL Execution Logging
 - Scheduling (SQL Server Agent)
 - Monitoring
-- Security & Governance
 
 ---
 
