@@ -76,8 +76,7 @@ The conceptual model follows these principles:
 images/conceptual_erd.png
 ```
 
-![Conceptual ERD](../images/conceptual_erd.png)
-
+![Conceptual Data Model](images/Conceptual%20Data%20Modeling.drawio.png)
 ---
 
 ## Next Step
