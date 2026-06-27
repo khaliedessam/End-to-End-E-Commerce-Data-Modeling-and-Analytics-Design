@@ -11,8 +11,7 @@ The logical model introduces primary keys, foreign keys, bridge tables, and busi
 
 The following diagram illustrates the logical database design after applying Third Normal Form (3NF). 
 
-![Normalized OLTP Schema](images/Normalized_OLTP_Schema.png)
-
+![Normalized OLTP Schema](images/Normalized%20OLTP%20Schema.png)
 ## Objectives
 
 The logical data model was designed to:
