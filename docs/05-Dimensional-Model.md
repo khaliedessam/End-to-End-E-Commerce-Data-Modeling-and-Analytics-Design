@@ -39,12 +39,6 @@ The **factSales** table stores quantitative data and references all dimension ta
 | dimShippingCompany | Shipping providers |
 | dimDate | Calendar and time attributes |
 
-## Design Features
-
-- Star Schema
-- Surrogate Keys
-- Slowly Changing Dimension (Type 2)
-- Analytics-optimized structure
 
 ## Why a Sales Data Mart?
 
