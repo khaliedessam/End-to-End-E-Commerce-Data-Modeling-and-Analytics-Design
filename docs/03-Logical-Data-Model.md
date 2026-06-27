@@ -12,39 +12,6 @@ The logical model introduces primary keys, foreign keys, bridge tables, and busi
 The following diagram illustrates the logical database design after applying Third Normal Form (3NF). 
 
 ![Normalized OLTP Schema](images/Normalized%20OLTP%20Schema.png)
-## Objectives
-
-The logical data model was designed to:
-
-- Convert the conceptual model into an implementable database design.
-- Eliminate data redundancy using **Third Normal Form (3NF)**.
-- Resolve all many-to-many relationships using bridge tables.
-- Create a scalable transactional database for daily business operations.
-
----
-
-## Normalization Strategy
-
-The operational database follows **Third Normal Form (3NF)**.
-
-### Benefits
-
-- Reduce data redundancy.
-- Improve data consistency.
-
----
-
-## Bridge Tables
-
-The following many-to-many relationships identified during conceptual modeling were resolved using bridge tables:
-
-| Business Relationship | Bridge Table |
-|----------------------|--------------|
-| Product ↔ Supplier | ProductSupplier |
-| Product ↔ Promotion | ProductPromotion |
-| Product ↔ Warehouse | Inventory |
-| Customer ↔ Product | Review |
-| Order ↔ Product | OrderDetail |
 
 ---
 
@@ -72,7 +39,31 @@ The normalized schema includes:
 
 ---
 
+## Bridge Tables
+
+The following many-to-many relationships identified during conceptual modeling were resolved using bridge tables:
+
+| Business Relationship | Bridge Table |
+|----------------------|--------------|
+| Product ↔ Supplier | ProductSupplier |
+| Product ↔ Promotion | ProductPromotion |
+| Product ↔ Warehouse | Inventory |
+| Customer ↔ Product | Review |
+| Order ↔ Product | OrderDetail |
+
+
 ---
+## 🎯 Objectives
+The logical data model was designed to:
+
+- Transforms the conceptual ERD into a normalized relational database
+- Eliminate data redundancy using **Third Normal Form (3NF)**.
+- Resolve all many-to-many relationships using bridge tables.
+- Create a scalable transactional database for daily business operations.
+
+---
+---
+
 
 
 
