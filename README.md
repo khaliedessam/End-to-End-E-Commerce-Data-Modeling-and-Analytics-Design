@@ -51,4 +51,15 @@ This workflow shows both sides of the data engineering process:
 
 ## 🏗️ Data Architecture
 The data architecture for this project follows Medallion Architecture **Bronze**, **Silver**, and **Gold** layers:
+
+<p align="center">
+    <img src="images/Data_Architecture.png"
+         alt="Data Warehouse Architecture"
+         width="1000">
+</p>
+
+<p align="center">
+<i>Figure 1. Data Warehouse Architecture using the Medallion Architecture.</i>
+</p>
+
  
