@@ -6,11 +6,16 @@
 
 ## 📖 Project Overview
 
-This project demonstrates the end-to-end development of an enterprise-grade data platform, covering the complete data engineering lifecycle from business process analysis and relational database design to the implementation of a modern Data Warehouse using the Medallion Architecture (Bronze, Silver, and Gold).
+The project involves:
 
-The solution includes a fully normalized OLTP database to ensure data integrity and consistency, followed by automated ETL/ELT pipelines that perform full data loads, data validation, cleansing, and transformation to prepare high-quality data for analytics.
-
-The analytical layer is built using dimensional modeling and a star schema, providing a scalable, high-performance foundation for business intelligence to generating actionable insights.
+1. **Business Analysis**: Understanding the business requirements, identifying core business entities, and defining their relationships.
+2. **Data Modeling**: Designing a conceptual ERD, resolving many-to-many relationships using bridge tables, and implementing a normalized Third Normal Form (3NF) operational database.
+3. **Data Warehouse Architecture**: Building a Medallion Architecture (Bronze, Silver, and Gold) to organize raw, cleansed, and business-ready data.
+4. **ETL Pipelines**: Developing automated stored procedures to extract, cleanse, transform, and load data from  source files into the Data Warehouse.
+5. **Dimensional Modeling**: Designing a Sales Data Mart using a Star Schema with fact and dimension tables optimized for analytical workloads.
+6. **Data Quality & Governance**: Applying validation rules, execution logging, Slowly Changing Dimension (SCD Type 2), indexing, and ETL monitoring to ensure data reliability.
+7. **ETL Automation**: Scheduling the complete ETL pipeline using SQL Server Agent for automated daily execution and monitoring.
+8. **Analytics & Reporting**: Developing SQL-based analytical reports and KPIs to deliver business insights.
 
 ## Project Development Workflow
 ```text
