@@ -79,6 +79,3 @@ The interactive Power BI dashboard is included in this repository.
 ---
 
 
-## Outcome
-
-The Power BI dashboard completes the end-to-end data engineering workflow by transforming the Gold Layer data model into an interactive business intelligence solution. It enables stakeholders to monitor sales performance, identify trends, compare customer and product performance, and support data-driven decision-making.
