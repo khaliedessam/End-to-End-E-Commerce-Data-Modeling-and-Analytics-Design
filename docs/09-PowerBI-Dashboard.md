@@ -4,8 +4,9 @@
 
 The final deliverable of this project is an interactive **Power BI Executive Sales Dashboard** built on top of the **Gold Layer** of the SQL Server Data Warehouse.
 
-The dashboard uses the dimensional model created in the Sales Data Mart, including the central **factSales** table and its related dimension tables. It provides a business-friendly reporting layer that allows users to monitor sales performance, customer activity, product performance, city-level sales, and shipping company contribution.
+The dashboard uses the dimensional model created in the Sales Data Mart, including the central **factSales** table and its related dimension tables.
 
+The Power BI dashboard completes the end-to-end data engineering workflow by transforming the Gold Layer data model into an interactive business intelligence solution. It enables stakeholders to monitor sales performance, identify trends, compare customer and product performance, and support data-driven decision-making.
 ---
 
 ## Dashboard Preview
@@ -14,20 +15,6 @@ The dashboard uses the dimensional model created in the Sales Data Mart, includi
 
 ---
 
-## Data Source
-
-```text
-SQL Server
-    │
-    ▼
-Gold Layer
-    │
-    ▼
-Sales Data Mart
-    │
-    ▼
-Power BI Dashboard
-```
 
 The dashboard uses the following Gold Layer tables:
 
@@ -54,34 +41,6 @@ The dashboard uses the following Gold Layer tables:
 | **Total Customers** | All relevant customer records | Counts the customers represented in the sales data. |
 
 ---
-
-## Payment Status Handling
-
-### Paid-only metrics
-
-The following KPIs are calculated only where:
-
-```text
-payment_status = 'Paid'
-```
-
-These include:
-
-- Total Sales
-- Average Order Value
-- Total Quantity
-
-### All-status metrics
-
-The following KPI includes all payment statuses:
-
-```text
-Paid, Refunded, Pending, Cancelled
-```
-
-This includes:
-
-- Total Orders
 
 This design provides a more accurate business view because revenue and quantity should reflect completed paid transactions, while order volume should represent the full operational activity of the business.
 
@@ -126,16 +85,6 @@ Open the file using **Power BI Desktop** to explore the interactive report.
 
 ---
 
-## Tools Used
-
-- SQL Server
-- Power BI Desktop
-- Gold Layer Sales Data Mart
-- Star Schema
-- DAX Measures
-- Interactive Visualizations
-
----
 
 ## Outcome
 
