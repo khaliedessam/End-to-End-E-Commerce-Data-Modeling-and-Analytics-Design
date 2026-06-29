@@ -10,9 +10,7 @@ The dashboard uses the dimensional model created in the Sales Data Mart, includi
 
 ## Dashboard Preview
 
-<p align="center">
-    <img src="images/Executive_Sales_Dashboard.png" alt="Executive Sales Dashboard" width="1000">
-</p>
+![Power BI Executive Sales Dashboard](images/power_bi_dashboard.png)
 
 ---
 
