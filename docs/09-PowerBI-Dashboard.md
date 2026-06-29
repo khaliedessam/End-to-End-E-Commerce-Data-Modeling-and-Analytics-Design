@@ -68,14 +68,6 @@ This design provides a more accurate business view because revenue and quantity 
 ---
 ## 📥 Dashboard File
 
-The Power BI dashboard is included in this repository.
 
-- 📄 **Repository File:** [Executive Sales Dashboard](../PowerBI/Executive_Sales_Dashboard.pbix)
-- ⬇️ **Direct Download:** https://github.com/khaliedessam/End-to-End-E-Commerce-Data-Modeling-and-Analytics-Design/raw/main/PowerBI/Executive_Sales_Dashboard.pbix
-
-> Open the downloaded file using **Microsoft Power BI Desktop**.
-
-> **Requirement:** Open the file using **Microsoft Power BI Desktop** to explore the interactive dashboard.
----
 
 
