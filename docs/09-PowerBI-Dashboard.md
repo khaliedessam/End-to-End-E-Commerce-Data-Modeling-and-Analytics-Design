@@ -68,6 +68,5 @@ This design provides a more accurate business view because revenue and quantity 
 ---
 ## 📥 Dashboard File
 
-
-
+➡️ **[Executive Sales Dashboard](../PowerBI/Executive_Sales_Dashboard.pbix)**
 
