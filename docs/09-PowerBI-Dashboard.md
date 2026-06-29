@@ -35,7 +35,6 @@ The dashboard uses the following Gold Layer tables:
 | **Total Orders** | All payment statuses | Counts all orders including Paid, Refunded, Pending, and Cancelled. |
 | **Total Customers** | All relevant customer records | Counts the customers represented in the sales data. |
 
----
 
 This design provides a more accurate business view because revenue and quantity should reflect completed paid transactions, while order volume should represent the full operational activity of the business.
 
