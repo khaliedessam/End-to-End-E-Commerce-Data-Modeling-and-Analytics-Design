@@ -10,6 +10,17 @@ The Power BI dashboard completes the end-to-end data engineering workflow by tra
 
 ---
 
+## Dashboard Preview
+
+The following dashboard was developed in **Power BI Desktop** using the **Gold Layer Sales Data Mart** as the reporting source.
+
+<p align="center">
+    <img src="images/power_bi_dashboard.png" alt="Executive Sales Dashboard" width="1000">
+</p>
+
+<p align="center">
+<i>Figure 1. Executive Sales Dashboard providing KPIs, sales trends, customer insights, product performance, and geographic analysis.</i>
+</p>
 
 The dashboard uses the following Gold Layer tables:
 
