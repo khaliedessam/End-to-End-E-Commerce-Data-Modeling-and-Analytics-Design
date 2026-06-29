@@ -69,13 +69,11 @@ This design provides a more accurate business view because revenue and quantity 
 
 ## 📥 Dashboard File
 
-The interactive Power BI dashboard is included in this repository.
+The interactive Power BI dashboard is available in this repository.
 
-👉 **[📊 Sales Dashboard.pbix](../PowerBI/Sales%20Dashboard.pbix)**
+### 👉 [Download Executive Sales Dashboard](../PowerBI/Executive_Sales_Dashboard.pbix)
 
-> Open the file using **Power BI Desktop** to explore the interactive dashboard.
----
-
+> **Requirement:** Open the file using **Microsoft Power BI Desktop** to explore the interactive dashboard.
 ---
 
 
