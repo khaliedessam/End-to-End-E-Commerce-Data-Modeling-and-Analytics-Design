@@ -12,8 +12,7 @@ The Power BI dashboard completes the end-to-end data engineering workflow by tra
 
 ## Dashboard Preview
 
-![Power BI Executive Sales Dashboard](images/power_bi_dashboard.png)
-
+[📊 Sales Dashboard.pbix](../PowerBI/Sales%20Dashboard.pbix)
 ---
 
 
