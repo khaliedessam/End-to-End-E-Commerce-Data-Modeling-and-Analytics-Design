@@ -10,9 +10,13 @@ The Power BI dashboard completes the end-to-end data engineering workflow by tra
 
 ---
 
-## Dashboard Preview
+## 📥 Dashboard File
 
-[📊 Sales Dashboard.pbix](../PowerBI/Sales%20Dashboard.pbix)
+The interactive Power BI dashboard is included in this repository.
+
+👉 **[📊 Sales Dashboard.pbix](../PowerBI/Sales%20Dashboard.pbix)**
+
+> Open the file using **Power BI Desktop** to explore the interactive dashboard.
 ---
 
 
