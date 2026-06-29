@@ -22,7 +22,9 @@ The following dashboard was developed in **Power BI Desktop** using the **Gold L
 <i>Figure 1. Executive Sales Dashboard providing KPIs, sales trends, customer insights, product performance, and geographic analysis.</i>
 </p>
 
-The dashboard uses the following Gold Layer tables:
+
+
+## The dashboard uses the following Gold Layer tables:
 
 | Table | Purpose |
 |------|---------|
