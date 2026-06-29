@@ -10,14 +10,7 @@ The Power BI dashboard completes the end-to-end data engineering workflow by tra
 
 ---
 
-## 📥 Dashboard File
 
-The interactive Power BI dashboard is included in this repository.
-
-👉 **[📊 Sales Dashboard.pbix](../PowerBI/Sales%20Dashboard.pbix)**
-
-> Open the file using **Power BI Desktop** to explore the interactive dashboard.
----
 
 
 The dashboard uses the following Gold Layer tables:
@@ -77,15 +70,14 @@ This design provides a more accurate business view because revenue and quantity 
 
 ---
 
-## Dashboard File
+## 📥 Dashboard File
 
-The Power BI dashboard file is included in the repository:
+The interactive Power BI dashboard is included in this repository.
 
-```text
-PowerBI/Sales Dashboard.pbix
-```
+👉 **[📊 Sales Dashboard.pbix](../PowerBI/Sales%20Dashboard.pbix)**
 
-Open the file using **Power BI Desktop** to explore the interactive report.
+> Open the file using **Power BI Desktop** to explore the interactive dashboard.
+---
 
 ---
 
