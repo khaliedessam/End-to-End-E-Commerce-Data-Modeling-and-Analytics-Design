@@ -66,10 +66,12 @@ This design provides a more accurate business view because revenue and quantity 
 - Which shipping companies contribute most to sales activity?
 
 ---
-## 📥 Dashboard File
+## 📂 Dashboard File
 
-The Power BI dashboard file is included in the repository.
+The Power BI dashboard is included in this repository.
 
-👉 **[Open PowerBI Folder](../PowerBi/)**
+- 📁 [Open Power BI Folder](https://github.com/khaliedessam/End-to-End-E-Commerce-Data-Modeling-and-Analytics-Design/tree/main/PowerBi)
 
-> Open the downloaded `.pbix` file using **Microsoft Power BI Desktop**.
+or
+
+- 📄 [Executive_Sales_Dashboard.pbix](https://github.com/khaliedessam/End-to-End-E-Commerce-Data-Modeling-and-Analytics-Design/blob/main/PowerBi/Executive_Sales_Dashboard.pbix)
