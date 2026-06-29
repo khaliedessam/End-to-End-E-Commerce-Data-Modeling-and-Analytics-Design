@@ -79,7 +79,7 @@ This design provides a more accurate business view because revenue and quantity 
 The Power BI dashboard file is included in the repository:
 
 ```text
-PowerBI/Executive_Sales_Dashboard.pbix
+PowerBI/Sales Dashboard.pbix
 ```
 
 Open the file using **Power BI Desktop** to explore the interactive report.
