@@ -70,6 +70,6 @@ This design provides a more accurate business view because revenue and quantity 
 
 The Power BI dashboard file is included in the repository.
 
-👉 **[Open PowerBI Folder](../PowerBI/)**
+👉 **[Open PowerBI Folder](../PowerBi/)**
 
 > Open the downloaded `.pbix` file using **Microsoft Power BI Desktop**.
