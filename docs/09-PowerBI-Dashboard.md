@@ -11,8 +11,6 @@ The Power BI dashboard completes the end-to-end data engineering workflow by tra
 ---
 
 
-
-
 The dashboard uses the following Gold Layer tables:
 
 | Table | Purpose |
