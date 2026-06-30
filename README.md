@@ -108,7 +108,7 @@ Before running the project, install:
 - Microsoft SQL Server
 - SQL Server Management Studio (SSMS)
 - Power BI Desktop
-
+- Draw.io
 ---
 
 ## Step 1: Open the Project
