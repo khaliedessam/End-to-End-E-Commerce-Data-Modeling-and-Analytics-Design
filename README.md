@@ -52,6 +52,12 @@ This workflow shows both sides of the data engineering process:
 - **Operational database design** using ERD, relationship modeling, bridge tables, and 3NF normalization.
 - **Analytical database design** using dimensional modeling, star schema, fact tables, dimension tables, and historical tracking.
 
+## 🏗️ Data Architecture
+The data architecture for this project follows Medallion Architecture **Bronze**, **Silver**, and **Gold** layers:
+
+![Data Architecture](docs/images/Data_Architecture.png)
+
+
 
  ## 📂 Repository Structure
 
@@ -96,11 +102,6 @@ End-to-End-E-Commerce-Data-Modeling-and-Analytics-Design/
 ├── README.md                                        # Project overview and navigation
 └── LICENSE 
 ```
-
-## 🏗️ Data Architecture
-The data architecture for this project follows Medallion Architecture **Bronze**, **Silver**, and **Gold** layers:
-
-![Data Architecture](docs/images/Data_Architecture.png)
 
 
 
