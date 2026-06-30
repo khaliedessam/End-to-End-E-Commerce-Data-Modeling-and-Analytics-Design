@@ -99,75 +99,151 @@ The data architecture for this project follows Medallion Architecture **Bronze**
 ![Data Architecture](docs/images/Data_Architecture.png)
 
 
-# 🚀 How to Run the Project
+## 🚀 How to Run the Project
 
-## 🛠️ Important Links & Tools:
+### 🛠️ Prerequisites
 
 Before running the project, install:
 
 - Microsoft SQL Server
 - SQL Server Management Studio (SSMS)
 - Power BI Desktop
-- Draw.io
+- Draw.io (for creating architecture diagrams)
+
 ---
 
-## Step 1: Prepare the Source Data
+### Step 1: Prepare the Source Data
 
-Download or clone this repository and ensure the source **CRM** and **ERP** CSV files are available in the **Datasets** folder.
+Download or clone this repository and ensure the **Source** CSV files are available in the **Datasets** folder.
 
 > **Note:** Update the CSV file paths in the Bronze layer stored procedures to point to your local **Datasets** directory before executing the ETL pipeline.
----
-
-## Step 2: Execute the SQL Scripts
-
-Run the scripts in the following order:
-
-1. **00_init**
-   - Creates the `Sales` database.
-   - Creates the `bronze`, `silver`, `gold`, and `etl` schemas.
-
-2. **01_bronze**
-   - Creates the Bronze tables.
-   - Loads the raw CRM and ERP CSV files into SQL Server.
-          
-3. **02_silver**
-   - Cleans and standardizes the Bronze data.
-   - Performs data validation and transformations.
-
-4. **03_gold**
-   - Creates the analytical data model.
-   - Builds the dimension tables and fact table.
-
-5. **04_etl**
-   - Creates and executes the complete ETL pipeline.
-   - Configures the SQL Server Agent job for automated execution.
-
-6. **05_checks**
-   - Runs data quality checks.
-   - Records ETL execution logs.
-
-7. **06_analytics**
-   - Executes the analytical SQL queries used for reporting.
 
 ---
 
-## Step 3: Verify the ETL Process
+### Step 2: Execute the SQL Scripts
 
-After running the ETL pipeline:
+Run the SQL scripts in the following order.
 
-- Verify that all Bronze, Silver, and Gold tables are populated.
-- Review the ETL log tables to confirm successful execution.
-- Check the SQL Server Agent job history to verify scheduled executions.
+#### 📁 00_init
+
+Creates the **Sales** database and required schemas.
+
+```text
+Scripts/
+└── 00_init/
+    └── 01_init_database.sql
+```
 
 ---
 
-## Step 4: Open the Power BI Dashboard
+#### 📁 01_bronze
+
+Creates the Bronze tables and loads the raw CRM and ERP CSV files.
+
+```text
+Scripts/
+└── 01_bronze/
+    ├── 01_ddl_bronze.sql
+    └── 02_load_bronze.sql
+```
+
+---
+
+#### 📁 02_silver
+
+Creates the Silver tables and performs data cleansing, standardization, and transformations.
+
+```text
+Scripts/
+└── 02_silver/
+    ├── 01_ddl_silver.sql
+    └── 02_load_silver.sql
+```
+
+---
+
+#### 📁 03_gold
+
+Creates the analytical layer including dimensions, fact tables, and business transformations.
+
+```text
+Scripts/
+└── 03_gold/
+    ├── 01_ddl_gold.sql
+    ├── 02_load_gold.sql
+    ├── 03_scd2_customer_address.sql
+    
+```
+
+---
+
+#### 📁 04_etl
+
+Creates the ETL logging tables and executes the complete ETL pipeline.
+
+```text
+Scripts/
+└── 04_etl/
+    ├── 01_ddl_etl_logging_tables.sql
+    ├── 02_run_pipeline_procedure.sql
+    └── 03_execute_pipeline.sql
+```
+
+---
+
+#### 📁 05_checks
+
+Runs validation queries and verifies data quality.
+
+```text
+Scripts/
+└── 05_checks/
+   
+```
+
+---
+
+#### 📁 06_analytics
+
+Execute the analytical SQL scripts to generate business insights and validate the Gold layer.
+
+```text
+Scripts/
+└── 06_analytics/
+   
+```
+
+---
+
+### Step 3: Verify the ETL Pipeline
+
+After executing the ETL process:
+
+- Verify that the Bronze, Silver, and Gold tables are populated successfully.
+- Review the ETL logging tables to confirm successful execution.
+
+---
+### Step 4: Configure SQL Server Agent
+
+Create a new **SQL Server Agent Job** to automate the ETL pipeline.
+
+Configure the job with the following settings:
+
+- **Job Name:** `Master ETL Pipeline`
+- **Step Type:** Transact-SQL Script (T-SQL)
+- **Database:** `Sales`
+- **Command:**
+
+```sql
+EXEC etl.run_pipeline;
+
+### Step 5: Open the Power BI Dashboard
 
 Open the Power BI report located in:
 
-```
+```text
 PowerBi/
 └── Executive_Sales_Dashboard.pbix
 ```
 
-Refresh the report to connect to the SQL Server Gold layer and explore the interactive dashboard.
+Refresh the report to connect to the SQL Server **Gold** layer and explore the interactive dashboard.
