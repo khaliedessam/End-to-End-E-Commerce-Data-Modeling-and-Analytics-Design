@@ -263,3 +263,16 @@ The Gold layer was analyzed using SQL and Power BI to generate business insights
 - Executive KPIs and business metrics
 
 The analytical SQL queries are available in **`Scripts/06_analytics`**, and the interactive dashboard is available in the **`PowerBi`** folder.
+
+## 🚀 Future Enhancements
+
+The current implementation focuses on the **Sales Data Mart**, providing an end-to-end solution for sales analytics using a Star Schema.
+
+The normalized operational database (3NF) was designed to support additional business domains that can be implemented as independent data marts in future phases, including:
+
+- 📦 **Inventory Data Mart** – Inventory levels, warehouse stock, and product availability.
+- 🚚 **Procurement Data Mart** – Supplier performance, purchasing activity, and product sourcing.
+- ⭐ **Customer Reviews Data Mart** – Product ratings, customer feedback, and review analytics.
+- 🎯 **Promotion Data Mart** – Promotion effectiveness, discount analysis, and campaign performance.
+
+This modular design allows the data warehouse to evolve into a complete enterprise analytics platform while reusing the same Medallion Architecture and ETL framework.
