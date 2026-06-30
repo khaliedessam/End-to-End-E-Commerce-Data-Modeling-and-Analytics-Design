@@ -99,83 +99,74 @@ The data architecture for this project follows Medallion Architecture **Bronze**
 ![Data Architecture](docs/images/Data_Architecture.png)
 
 
-# ⚙️ ETL Pipeline Workflow
+# 🚀 How to Run the Project
 
-```text
-┌──────────────────────────────────────────────────────────────────────┐
-│                    SOURCE SYSTEMS (CSV FILES)                        │
-│                            
-│                                                                      │
-│                  Total Source Files: 17 CSV Files                    │
-└──────────────────────────────────────────────────────────────────────┘
-                                │
-                                ▼
-                         EXTRACT PHASE
-                                │
-┌──────────────────────────────────────────────────────────────────────┐
-│                      STEP 1 : BRONZE LAYER                           │
-│                                                                      │
-│   ✓ Load all CSV files into SQL Server                              │
-│   ✓ Preserve raw source data                                        │
-│   ✓ No transformations                                              │
-│   ✓ Full Batch Load                                                 │
-│   ✓ Truncate & Reload Strategy                                      │
-│                                                                      │
-│                OUTPUT: Raw Operational Data                          │
-└──────────────────────────────────────────────────────────────────────┘
-                                │
-                                ▼
-                      TRANSFORMATION PHASE
-                                │
-┌──────────────────────────────────────────────────────────────────────┐
-│                      STEP 2 : SILVER LAYER                           │
-│                                                                      │
-│   ✓ Data Cleansing                                                   │
-│   ✓ Remove Duplicate Records                                         │
-│   ✓ Handle NULL Values                                               │
-│   ✓ Standardize Text & Dates                                         │
-│   ✓ Trim Spaces                                                      │
-│   ✓ Data Type Conversion                                             │
-│   ✓ Apply Business Validation Rules                                  │
-│   ✓ Generate Metadata Columns                                        │
-│   ✓ Data Quality Checks                                              │
-│                                                                      │
-│             OUTPUT: Cleaned & Standardized Data                      │
-└──────────────────────────────────────────────────────────────────────┘
-                                │
-                                ▼
-                     BUSINESS MODELING PHASE
-                                │
-┌──────────────────────────────────────────────────────────────────────┐
-│                       STEP 3 : GOLD LAYER                            │
-│                                                                      │
-│   ✓ Merge Operational Data                                           │
-│   ✓ Build Star Schema                                                │
-│   ✓ Generate Surrogate Keys                                          │
-│   ✓ Create Dimension Tables                                          │
-│   ✓ Create Fact Table                                                │
-│   ✓ Apply Business Rules                                             │
-│   ✓ Implement SCD Type 2 (Customer Address)                          │
-│   ✓ Build Date Dimension                                             │
-│   ✓ Optimize for Analytical Queries                                  │
-│                                                                      │
-│              OUTPUT: Analytics-Ready Sales Data Mart                 │
-└──────────────────────────────────────────────────────────────────────┘
-                                │
-                                ▼
-                         CONSUMPTION LAYER
-                                │
-┌──────────────────────────────────────────────────────────────────────┐
-│                    ANALYTICS & REPORTING                             │
-│                                                                      │
-│   ✓ KPI Analysis                                                     │
-│   ✓ Customer Reports                                                 │
-│   ✓ Product Reports                                                  │
-│   ✓ Trend Analysis                                                   │
-│   ✓ Ranking Analysis                                                 │
-│   ✓ Customer Segmentation                                            │
-│   ✓ Performance Analysis                                             │
-│   ✓ SQL Analytics                                                    │
-└──────────────────────────────────────────────────────────────────────┘
+## Prerequisites
+
+Before running the project, install:
+
+- Microsoft SQL Server
+- SQL Server Management Studio (SSMS)
+- Power BI Desktop
+
+---
+
+## Step 1: Open the Project
+
+Download or clone this repository and open the SQL scripts in **SQL Server Management Studio (SSMS)**.
+
+---
+
+## Step 2: Execute the SQL Scripts
+
+Run the scripts in the following order:
+
+1. **00_init**
+   - Creates the `Sales` database.
+   - Creates the `bronze`, `silver`, `gold`, and `etl` schemas.
+
+2. **01_bronze**
+   - Creates the Bronze tables.
+   - Loads the raw CRM and ERP CSV files into SQL Server.
+
+3. **02_silver**
+   - Cleans and standardizes the Bronze data.
+   - Performs data validation and transformations.
+
+4. **03_gold**
+   - Creates the analytical data model.
+   - Builds the dimension tables and fact table.
+
+5. **04_etl**
+   - Creates and executes the complete ETL pipeline.
+   - Configures the SQL Server Agent job for automated execution.
+
+6. **05_checks**
+   - Runs data quality checks.
+   - Records ETL execution logs.
+
+7. **06_analytics**
+   - Executes the analytical SQL queries used for reporting.
+
+---
+
+## Step 3: Verify the ETL Process
+
+After running the ETL pipeline:
+
+- Verify that all Bronze, Silver, and Gold tables are populated.
+- Review the ETL log tables to confirm successful execution.
+- Check the SQL Server Agent job history to verify scheduled executions.
+
+---
+
+## Step 4: Open the Power BI Dashboard
+
+Open the Power BI report located in:
+
+```
+PowerBi/
+└── Executive_Sales_Dashboard.pbix
 ```
 
+Refresh the report to connect to the SQL Server Gold layer and explore the interactive dashboard.
