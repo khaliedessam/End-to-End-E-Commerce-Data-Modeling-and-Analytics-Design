@@ -127,7 +127,9 @@ Run the scripts in the following order:
 
 2. **01_bronze**
    - Creates the Bronze tables.
-   - Loads the raw CRM and ERP CSV files into SQL Server.
+   - Loads the raw CRM and ERP CSV files into SQL Server. (Note Inside load_bronze, update the BULK INSERT file paths to match your local machine)
+
+
 
 3. **02_silver**
    - Cleans and standardizes the Bronze data.
