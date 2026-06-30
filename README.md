@@ -4,12 +4,11 @@
 ![Analytics](https://img.shields.io/badge/Analytics-SQL-orange)
 ![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow)
 
-Welcome to the Data Engineering and Analytics Project repository. This project demonstrates a comprehensive end-to-end data engineering solution — from business analysis and relational database design to building a modern data warehouse and generating actionable insights. It highlights industry best practices in data engineering and analytics.
-
+Welcome to the Data Engineering and Analytics Project repository. 
 
 ## 🎯 Project Objective
 
-The goal of this project is to simulate the complete lifecycle of building a modern data warehouse for an e-commerce business, starting from business understanding and data modeling through analytical reporting.
+This project demonstrates a comprehensive end-to-end data engineering solution — from business analysis and relational database design to building a modern data warehouse and generating actionable insights. It highlights industry best practices in data engineering and analytics.
 
 ## 📖 Project Overview
 
