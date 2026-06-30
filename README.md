@@ -236,8 +236,9 @@ Configure the job with the following settings:
 
 ```sql
 EXEC etl.run_pipeline;
-
+```
 ---
+
 ### Step 5: Open the Power BI Dashboard
 
 Open the Power BI report located in:
@@ -248,3 +249,17 @@ PowerBi/
 ```
 
 Refresh the report to connect to the SQL Server **Gold** layer and explore the interactive dashboard.
+
+
+## 📈 Analytics & Business Insights
+
+The Gold layer was analyzed using SQL and Power BI to generate business insights and answer key sales questions, including:
+
+- Sales and revenue performance
+- Order and customer analysis
+- Product and category performance
+- Geographic sales trends
+- Shipping company performance
+- Executive KPIs and business metrics
+
+The analytical SQL queries are available in **`Scripts/06_analytics`**, and the interactive dashboard is available in the **`PowerBi`** folder.
