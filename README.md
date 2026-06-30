@@ -49,6 +49,51 @@ This workflow shows both sides of the data engineering process:
 - **Operational database design** using ERD, relationship modeling, bridge tables, and 3NF normalization.
 - **Analytical database design** using dimensional modeling, star schema, fact tables, dimension tables, and historical tracking.
 
+- ## 📂 Repository Structure
+
+```text
+End-to-End-E-Commerce-Data-Modeling-and-Analytics-Design/
+│
+├── Datasets/                                       # Raw datasets used for the project (ERP and CRM data)
+│
+├── docs/                                           # Project documentation
+│   ├── images/                                     # Diagrams and screenshots
+│   │   ├── Conceptual Data Modeling.png
+│   │   ├── Normalized OLTP Schema.png
+│   │   ├── Data_Architecture.png
+│   │   ├── Star Schema Model.png
+│   │   ├── ETL_Process.png
+│   │   ├── ETL_Table_Logs.png
+│   │   └── Power_BI_Dashboard.png
+│   │
+│   ├── 01-business_case.md                         # Business requirements and project scope
+│   ├── 02-Conceptual-Data-Model.md                 # Conceptual Entity Relationship Diagram (ERD)
+│   ├── 03-Logical-Data-Model.md                    # Normalized OLTP database design (3NF)
+│   ├── 04-Data-Warehouse-Architecture.md           # Medallion Architecture (Bronze, Silver, Gold)
+│   ├── 05-Dimensional-Model.md                     # Sales Data Mart (Star Schema)
+│   ├── 06-etl_process.md                           # ETL pipeline implementation
+│   ├── 07-Scripts-Overview.md                      # SQL scripts documentation
+│   ├── 08-Data-Catalog.md                          # Catalog of datasets, including field descriptions and metadata
+│   └── 09-PowerBI-Dashboard.md                     # Power BI dashboard documentation
+│
+├── Scripts/                                        # SQL implementation
+│   ├── 00_init/                                    # Database creation, schemas and initialization
+│   ├── 01_bronze/                                  # Scripts for extracting and loading raw data
+│   ├── 02_silver/                                  # Scripts for cleaning and transforming data
+│   ├── 03_gold/                                    # Scripts for creating analytical models
+│   ├── 04_etl/                                     # Master ETL pipeline and logging
+│   ├── 05_checks/                                  # Data quality validation 
+│   └── 06_analytics/                               # Scripts for analytical SQL queries
+│
+├── PowerBi/                                        # Power BI dashboard
+│   └── Executive_Sales_Dashboard.pbix
+│
+├── Tests/                                          # Data quality and validation scripts
+│
+├── README.md                                        # Project overview and navigation
+└── LICENSE 
+```
+
 ## 🏗️ Data Architecture
 The data architecture for this project follows Medallion Architecture **Bronze**, **Silver**, and **Gold** layers:
 
