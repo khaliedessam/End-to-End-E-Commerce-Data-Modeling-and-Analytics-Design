@@ -88,7 +88,6 @@ End-to-End-E-Commerce-Data-Modeling-and-Analytics-Design/
 ├── PowerBi/                                        # Power BI dashboard
 │   └── Executive_Sales_Dashboard.pbix
 │
-├── Tests/                                          # Data quality and validation scripts
 │
 ├── README.md                                        # Project overview and navigation
 └── LICENSE 
