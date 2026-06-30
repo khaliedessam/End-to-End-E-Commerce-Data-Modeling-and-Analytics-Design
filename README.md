@@ -101,7 +101,7 @@ The data architecture for this project follows Medallion Architecture **Bronze**
 
 # 🚀 How to Run the Project
 
-## Prerequisites
+## 🛠️ Important Links & Tools:
 
 Before running the project, install:
 
@@ -111,10 +111,11 @@ Before running the project, install:
 - Draw.io
 ---
 
-## Step 1: Open the Project
+## Step 1: Prepare the Source Data
 
-Download or clone this repository and open the SQL scripts in **SQL Server Management Studio (SSMS)**.
+Download or clone this repository and ensure the source **CRM** and **ERP** CSV files are available in the **Datasets** folder.
 
+> **Note:** Update the CSV file paths in the Bronze layer stored procedures to point to your local **Datasets** directory before executing the ETL pipeline.
 ---
 
 ## Step 2: Execute the SQL Scripts
