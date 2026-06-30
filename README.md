@@ -268,11 +268,10 @@ The analytical SQL queries are available in **`Scripts/06_analytics`**, and the 
 
 The current implementation focuses on the **Sales Data Mart**, providing an end-to-end solution for sales analytics using a Star Schema.
 
-The normalized operational database (3NF) was designed to support additional business domains that can be implemented as independent data marts in future phases, including:
+The current release focuses on the **Sales Data Mart**, with the architecture designed to support future analytical data marts for additional business domains, including:
 
 - 📦 **Inventory Data Mart** – Inventory levels, warehouse stock, and product availability.
 - 🚚 **Procurement Data Mart** – Supplier performance, purchasing activity, and product sourcing.
 - ⭐ **Customer Reviews Data Mart** – Product ratings, customer feedback, and review analytics.
 - 🎯 **Promotion Data Mart** – Promotion effectiveness, discount analysis, and campaign performance.
 
-This modular design allows the data warehouse to evolve into a complete enterprise analytics platform while reusing the same Medallion Architecture and ETL framework.
