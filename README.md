@@ -97,3 +97,85 @@ End-to-End-E-Commerce-Data-Modeling-and-Analytics-Design/
 The data architecture for this project follows Medallion Architecture **Bronze**, **Silver**, and **Gold** layers:
 
 ![Data Architecture](docs/images/Data_Architecture.png)
+
+
+# ⚙️ ETL Pipeline Workflow
+
+```text
+┌──────────────────────────────────────────────────────────────────────┐
+│                    SOURCE SYSTEMS (CSV FILES)                        │
+│                            
+│                                                                      │
+│                  Total Source Files: 17 CSV Files                    │
+└──────────────────────────────────────────────────────────────────────┘
+                                │
+                                ▼
+                         EXTRACT PHASE
+                                │
+┌──────────────────────────────────────────────────────────────────────┐
+│                      STEP 1 : BRONZE LAYER                           │
+│                                                                      │
+│   ✓ Load all CSV files into SQL Server                              │
+│   ✓ Preserve raw source data                                        │
+│   ✓ No transformations                                              │
+│   ✓ Full Batch Load                                                 │
+│   ✓ Truncate & Reload Strategy                                      │
+│                                                                      │
+│                OUTPUT: Raw Operational Data                          │
+└──────────────────────────────────────────────────────────────────────┘
+                                │
+                                ▼
+                      TRANSFORMATION PHASE
+                                │
+┌──────────────────────────────────────────────────────────────────────┐
+│                      STEP 2 : SILVER LAYER                           │
+│                                                                      │
+│   ✓ Data Cleansing                                                   │
+│   ✓ Remove Duplicate Records                                         │
+│   ✓ Handle NULL Values                                               │
+│   ✓ Standardize Text & Dates                                         │
+│   ✓ Trim Spaces                                                      │
+│   ✓ Data Type Conversion                                             │
+│   ✓ Apply Business Validation Rules                                  │
+│   ✓ Generate Metadata Columns                                        │
+│   ✓ Data Quality Checks                                              │
+│                                                                      │
+│             OUTPUT: Cleaned & Standardized Data                      │
+└──────────────────────────────────────────────────────────────────────┘
+                                │
+                                ▼
+                     BUSINESS MODELING PHASE
+                                │
+┌──────────────────────────────────────────────────────────────────────┐
+│                       STEP 3 : GOLD LAYER                            │
+│                                                                      │
+│   ✓ Merge Operational Data                                           │
+│   ✓ Build Star Schema                                                │
+│   ✓ Generate Surrogate Keys                                          │
+│   ✓ Create Dimension Tables                                          │
+│   ✓ Create Fact Table                                                │
+│   ✓ Apply Business Rules                                             │
+│   ✓ Implement SCD Type 2 (Customer Address)                          │
+│   ✓ Build Date Dimension                                             │
+│   ✓ Optimize for Analytical Queries                                  │
+│                                                                      │
+│              OUTPUT: Analytics-Ready Sales Data Mart                 │
+└──────────────────────────────────────────────────────────────────────┘
+                                │
+                                ▼
+                         CONSUMPTION LAYER
+                                │
+┌──────────────────────────────────────────────────────────────────────┐
+│                    ANALYTICS & REPORTING                             │
+│                                                                      │
+│   ✓ KPI Analysis                                                     │
+│   ✓ Customer Reports                                                 │
+│   ✓ Product Reports                                                  │
+│   ✓ Trend Analysis                                                   │
+│   ✓ Ranking Analysis                                                 │
+│   ✓ Customer Segmentation                                            │
+│   ✓ Performance Analysis                                             │
+│   ✓ SQL Analytics                                                    │
+└──────────────────────────────────────────────────────────────────────┘
+```
+
