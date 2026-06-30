@@ -274,17 +274,9 @@ The Gold layer was analyzed using SQL and Power BI to generate business insights
 
 The analytical SQL queries are available in **`Scripts/06_analytics`**, and the interactive dashboard is available in the **`PowerBi`** folder.
 
-## Dashboard Preview
+## 📊 Power BI Dashboard
 
-The following dashboard was developed in **Power BI Desktop** using the **Gold Layer Sales Data Mart** as the reporting source.
-
-<p align="center">
-    <img src="images/power_bi_dashboard.png" alt="Executive Sales Dashboard" width="1000">
-</p>
-
-<p align="center">
-<i>Figure 1. Executive Sales Dashboard providing KPIs, sales trends, customer insights, product performance, and geographic analysis.</i>
-</p>
+![Power BI Dashboard](docs/images/power_bi_dashboard.png)
 
 
 ## 🚀 Future Enhancements
