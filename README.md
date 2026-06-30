@@ -46,6 +46,9 @@ Build Star Schema with Facts and Dimensions
         |
         v
 Develop ETL Pipeline and Analytics Reports
+        |
+        v
+Build Interactive Power BI Dashboard
 ```
 This workflow shows both sides of the data engineering process:
 
