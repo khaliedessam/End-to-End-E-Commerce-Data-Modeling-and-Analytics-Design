@@ -138,7 +138,7 @@ Scripts/
 
 #### 📁 01_bronze
 
-Creates the Bronze tables and loads the raw CRM and ERP CSV files.
+Creates the Bronze tables and loads the **Source** CSV files.
 
 ```text
 Scripts/
