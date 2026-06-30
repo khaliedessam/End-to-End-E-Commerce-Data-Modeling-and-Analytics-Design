@@ -6,6 +6,8 @@
 
 Welcome to the Data Engineering and Analytics Project repository. This project demonstrates a comprehensive end-to-end data engineering solution — from business analysis and relational database design to building a modern data warehouse and generating actionable insights. It highlights industry best practices in data engineering and analytics.
 
+
+
 ## 📖 Project Overview
 
 The project involves:
@@ -18,6 +20,7 @@ The project involves:
 6. **Data Quality & Governance**: Applying validation rules, execution logging, Slowly Changing Dimension (SCD Type 2), indexing, and ETL monitoring to ensure data reliability.
 7. **ETL Automation**: Scheduling the complete ETL pipeline using SQL Server Agent for automated daily execution and monitoring.
 8. **Analytics & Reporting**: Developing SQL-based analytical reports and KPIs to deliver business insights.
+
 
 ## Project Development Workflow
 ```text
@@ -49,7 +52,8 @@ This workflow shows both sides of the data engineering process:
 - **Operational database design** using ERD, relationship modeling, bridge tables, and 3NF normalization.
 - **Analytical database design** using dimensional modeling, star schema, fact tables, dimension tables, and historical tracking.
 
-- ## 📂 Repository Structure
+
+ ## 📂 Repository Structure
 
 ```text
 End-to-End-E-Commerce-Data-Modeling-and-Analytics-Design/
@@ -97,6 +101,7 @@ End-to-End-E-Commerce-Data-Modeling-and-Analytics-Design/
 The data architecture for this project follows Medallion Architecture **Bronze**, **Silver**, and **Gold** layers:
 
 ![Data Architecture](docs/images/Data_Architecture.png)
+
 
 
 ## 🚀 How to Run the Project
@@ -251,6 +256,7 @@ PowerBi/
 Refresh the report to connect to the SQL Server **Gold** layer and explore the interactive dashboard.
 
 
+
 ## 📈 Analytics & Business Insights
 
 The Gold layer was analyzed using SQL and Power BI to generate business insights and answer key sales questions, including:
@@ -264,9 +270,8 @@ The Gold layer was analyzed using SQL and Power BI to generate business insights
 
 The analytical SQL queries are available in **`Scripts/06_analytics`**, and the interactive dashboard is available in the **`PowerBi`** folder.
 
-## 🚀 Future Enhancements
 
-The current implementation focuses on the **Sales Data Mart**, providing an end-to-end solution for sales analytics using a Star Schema.
+## 🚀 Future Enhancements
 
 The current release focuses on the **Sales Data Mart**, with the architecture designed to support future analytical data marts for additional business domains, including:
 
