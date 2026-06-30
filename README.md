@@ -13,14 +13,12 @@ Welcome to the Data Engineering and Analytics Project repository. This project d
 The project involves:
 
 1. **Business Analysis**: Understanding the business requirements, identifying core business entities, and defining their relationships.
-2. **Data Modeling**: Designing a conceptual ERD, resolving many-to-many relationships using bridge tables, and implementing a normalized Third Normal Form (3NF) operational database.
+2. **Data Modeling**: Designed a conceptual ERD, resolved many-to-many relationships with bridge tables, and built a normalized 3NF operational database.
 3. **Data Warehouse Architecture**: Building a Medallion Architecture (Bronze, Silver, and Gold) to organize raw, cleansed, and business-ready data.
 4. **ETL Pipelines**: Developing automated stored procedures to extract, cleanse, transform, and load data from  source files into the Data Warehouse.
-5. **Dimensional Modeling**: Designing a Sales Data Mart using a Star Schema with fact and dimension tables optimized for analytical workloads.
-6. **Data Quality & Governance**: Applying validation rules, execution logging, Slowly Changing Dimension (SCD Type 2), indexing, and ETL monitoring to ensure data reliability.
-7. **ETL Automation**: Scheduling the complete ETL pipeline using SQL Server Agent for automated daily execution and monitoring.
-8. **Analytics & Reporting**: Developing SQL-based analytical reports and KPIs to deliver business insights.
-
+5. **Dimensional Modeling**: Designing a Sales Data Mart using a Star Schema with fact and dimension tables optimized for analytical reporting.
+6. **ETL Automation**: Scheduling the complete ETL pipeline using SQL Server Agent for automated daily execution and monitoring.
+7. **Analytics & Reporting**: Developed SQL-based analytical reports and KPIs, and built an interactive Power BI sales dashboard to deliver actionable business insights.
 
 ## Project Development Workflow
 ```text
