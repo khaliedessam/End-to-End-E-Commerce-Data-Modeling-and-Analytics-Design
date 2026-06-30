@@ -237,6 +237,7 @@ Configure the job with the following settings:
 ```sql
 EXEC etl.run_pipeline;
 
+---
 ### Step 5: Open the Power BI Dashboard
 
 Open the Power BI report located in:
