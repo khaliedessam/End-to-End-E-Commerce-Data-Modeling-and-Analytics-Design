@@ -4,6 +4,7 @@
 
 This project focuses on the **Sales** business process by implementing a **Sales Data Mart**. The model follows a **Star Schema**, organizing business data into a central fact table surrounded by descriptive dimension tables.
 
+Fact grain: one row per product line within an order.
 ---
 
 ## Sales Data Mart
