@@ -24,7 +24,7 @@ The project involves:
 
 
 
-## Project Highlights
+##  💡 Project Highlights
 
 - Business Requirements Analysis
 - Conceptual ERD
@@ -38,7 +38,7 @@ The project involves:
 
 
 
-## Project Development Workflow
+## 🛠️ Project Development Workflow
 ```text
 Business Case Understanding
         |
