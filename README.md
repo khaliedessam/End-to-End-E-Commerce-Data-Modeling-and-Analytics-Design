@@ -22,6 +22,22 @@ The project involves:
 6. **ETL Automation**: Scheduling the complete ETL pipeline using SQL Server Agent for automated daily execution and monitoring.
 7. **Analytics & Reporting**: Developed SQL-based analytical reports and KPIs, and built an interactive Power BI sales dashboard to deliver actionable business insights.
 
+---
+
+## Project Highlights
+
+- Business Requirements Analysis
+- Conceptual ERD
+- 3NF Operational Database
+- Medallion Architecture (Bronze, Silver, Gold)
+- Star Schema
+- SCD Type 2
+- Automated ETL Pipeline
+- SQL Analytics
+- Interactive Power BI Dashboard
+
+---
+
 ## Project Development Workflow
 ```text
 Business Case Understanding
