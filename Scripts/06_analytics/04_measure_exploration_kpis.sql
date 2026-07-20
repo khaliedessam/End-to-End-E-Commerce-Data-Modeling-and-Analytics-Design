@@ -1,6 +1,32 @@
 
--- Measures Exploration
--- Calculate the key metric of the business(Big Numbers)
+
+/*
+===============================================================================
+Script Summary
+-------------------------------------------------------------------------------
+This script generates the key business metrics used in the Executive Sales
+Dashboard.
+
+Metrics calculated using only PAID orders:
+- Revenue
+- Total Quantity Sold
+- Average Product Price
+- Average Order Value (Revenue / Distinct Paid Orders)
+
+Metrics calculated using all orders, regardless of payment status
+(PAID, REFUND, CANCELLED, and PENDING):
+- Total Orders
+
+Additional metrics:
+- Total Products (from gold.dim_product)
+- Total Customers (from gold.dim_customer)
+
+Note:
+Revenue-related KPIs are intentionally filtered to PaymentStatus = 'PAID'
+to reflect only completed sales transactions.
+===============================================================================
+*/
+
 
 --Find Total Sales Value  
 select sum(NetAmount) as Revenue from gold.fact_sales
@@ -40,6 +66,11 @@ select count(distinct CustomerID) as Total_Customers from gold.dim_customer
 
 
 -- Generate a Report that shows all key metrics of the business
+IF OBJECT_ID('gold.vw_business_KPIs', 'V') IS NOT NULL
+    DROP VIEW gold.vw_business_KPIs;
+GO
+
+CREATE VIEW gold.vw_business_KPIs AS
 
 select 'Revenue' as measure_name , sum(NetAmount) as measure_value from gold.fact_sales 
 where PaymentStatus = 'PAID'
@@ -59,3 +90,6 @@ select 'Total_Products' as measure_name , count(distinct ProductID) as Total_Pro
 union all
 select 'Total_Customers' as measure_name , count(distinct CustomerID) as Total_Customers from gold.dim_customer
 
+-- Business KPI Summary
+
+select * from gold.vw_business_KPIs
