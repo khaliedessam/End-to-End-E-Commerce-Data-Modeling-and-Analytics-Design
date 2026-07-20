@@ -10,8 +10,21 @@ The Power BI dashboard completes the end-to-end data engineering workflow by tra
 
 ---
 
+## Dashboard Preview
 
-The dashboard uses the following Gold Layer tables:
+The following dashboard was developed in **Power BI Desktop** using the **Gold Layer Sales Data Mart** as the reporting source.
+
+<p align="center">
+    <img src="images/power_bi_dashboard.png" alt="Executive Sales Dashboard" width="1000">
+</p>
+
+<p align="center">
+<i>Figure 1. Executive Sales Dashboard providing KPIs, sales trends, customer insights, product performance, and geographic analysis.</i>
+</p>
+
+
+
+## The dashboard uses the following Gold Layer tables:
 
 | Table | Purpose |
 |------|---------|
@@ -66,7 +79,12 @@ This design provides a more accurate business view because revenue and quantity 
 - Which shipping companies contribute most to sales activity?
 
 ---
-## 📥 Dashboard File
+## 📂 Dashboard File
 
-➡️ **[Executive Sales Dashboard](../PowerBI/Executive_Sales_Dashboard.pbix)**
+The Power BI dashboard is included in this repository.
 
+- 📁 [Open Power BI Folder](https://github.com/khaliedessam/End-to-End-E-Commerce-Data-Modeling-and-Analytics-Design/tree/main/PowerBi)
+
+or
+
+- 📄 [Executive_Sales_Dashboard.pbix](https://github.com/khaliedessam/End-to-End-E-Commerce-Data-Modeling-and-Analytics-Design/blob/main/PowerBi/Executive_Sales_Dashboard.pbix)
