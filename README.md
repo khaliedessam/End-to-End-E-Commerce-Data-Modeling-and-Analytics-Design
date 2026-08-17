@@ -320,19 +320,19 @@ The following screenshots demonstrate the SQL analytical reports developed to ge
 
 ### 👥 Customer Report
 
-![Customer Report](docs/Customer%20Report.png)
+![Customer Report](docs/images/Customer%20Report.png)
 
 ### 📦 Product Report
 
-![Product Report](docs/Product%20Report.png)
+![Product Report](docs/images/Product%20Report.png)
 
 ### 📈 KPI Analysis
 
-![KPI Analysis](docs/KPIS.png)
+![KPI Analysis](docs/images/KPIS.png)
 
 ### 📊 Performance Analysis
 
-![Performance Analysis](docs/Performance%20analysis.png)
+![Performance Analysis](docs/images/Performance%20analysis.png)
 
 
 
