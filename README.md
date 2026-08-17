@@ -301,15 +301,12 @@ Below are selected screenshots showcasing the data models and SQL-based analytic
 
 ### 🗂️ Conceptual Data Model
 
-![Conceptual Data Model](docs/images/Conceptual%20Data%20Modeling.png)
+![Conceptual Data Model](docs/images/Conceptual%20Data%20Modeling.drawio.png)
 
 ### 🏗️ Normalized OLTP Schema
 
 ![Normalized OLTP Schema](docs/images/Normalized%20OLTP%20Schema.png)
 
-### 🏛️ Data Warehouse Architecture
-
-![Data Warehouse Architecture](docs/images/Data_Architecture.png)
 
 ### ⭐ Star Schema
 
