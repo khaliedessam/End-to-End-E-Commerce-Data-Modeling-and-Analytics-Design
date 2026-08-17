@@ -304,3 +304,33 @@ The current release focuses on the **Sales Data Mart**, with the architecture de
 - ⭐ **Customer Reviews Data Mart** – Product ratings, customer feedback, and review analytics.
 - 🎯 **Promotion Data Mart** – Promotion effectiveness, discount analysis, and campaign performance.
 
+## 📸 Project Screenshots
+
+Below are selected screenshots showcasing the main components and workflow of the project.
+
+### 🗂️ Conceptual Data Model
+
+![Conceptual Data Model](docs/images/Conceptual%20Data%20Modeling.png)
+
+### 🏗️ Normalized OLTP Schema
+
+![Normalized OLTP Schema](docs/images/Normalized%20OLTP%20Schema.png)
+
+### 🏛️ Data Warehouse Architecture
+
+![Data Warehouse Architecture](docs/images/Data_Architecture.png)
+
+### ⭐ Star Schema
+
+![Star Schema](docs/images/Star%20Schema%20Model.png)
+
+### ⚙️ ETL Process
+
+![ETL Process](docs/images/ETL_Process.png)
+
+### 📋 ETL Execution Logs
+
+![ETL Table Logs](docs/images/ETL_Table_Logs.png)
+
+
+
