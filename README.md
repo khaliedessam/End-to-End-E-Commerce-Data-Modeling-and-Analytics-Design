@@ -295,18 +295,9 @@ The analytical SQL queries are available in **`Scripts/06_analytics`**, and the 
 ![Power BI Dashboard](docs/images/power_bi_dashboard.png)
 
 
-## 🚀 Future Enhancements
-
-The current release focuses on the **Sales Data Mart**, with the architecture designed to support future analytical data marts for additional business domains, including:
-
-- 📦 **Inventory Data Mart** – Inventory levels, warehouse stock, and product availability.
-- 🚚 **Procurement Data Mart** – Supplier performance, purchasing activity, and product sourcing.
-- ⭐ **Customer Reviews Data Mart** – Product ratings, customer feedback, and review analytics.
-- 🎯 **Promotion Data Mart** – Promotion effectiveness, discount analysis, and campaign performance.
-
 ## 📸 Project Screenshots
 
-Below are selected screenshots showcasing the main components and workflow of the project.
+Below are selected screenshots showcasing the data models and SQL-based analytical reports developed as part of the project.
 
 ### 🗂️ Conceptual Data Model
 
@@ -324,13 +315,35 @@ Below are selected screenshots showcasing the main components and workflow of th
 
 ![Star Schema](docs/images/Star%20Schema%20Model.png)
 
-### ⚙️ ETL Process
+---
 
-![ETL Process](docs/images/ETL_Process.png)
+## 📊 SQL Analytics Reports
 
-### 📋 ETL Execution Logs
+The following screenshots demonstrate the SQL analytical reports developed to generate business insights from the Gold layer.
 
-![ETL Table Logs](docs/images/ETL_Table_Logs.png)
+### 👥 Customer Report
+
+![Customer Report](docs/Customer%20Report.png)
+
+### 📦 Product Report
+
+![Product Report](docs/Product%20Report.png)
+
+### 📈 KPI Analysis
+
+![KPI Analysis](docs/KPIS.png)
+
+### 📊 Performance Analysis
+
+![Performance Analysis](docs/Performance%20analysis.png)
 
 
 
+## 🚀 Future Enhancements
+
+The current release focuses on the **Sales Data Mart**, with the architecture designed to support future analytical data marts for additional business domains, including:
+
+- 📦 **Inventory Data Mart** – Inventory levels, warehouse stock, and product availability.
+- 🚚 **Procurement Data Mart** – Supplier performance, purchasing activity, and product sourcing.
+- ⭐ **Customer Reviews Data Mart** – Product ratings, customer feedback, and review analytics.
+- 🎯 **Promotion Data Mart** – Promotion effectiveness, discount analysis, and campaign performance.
