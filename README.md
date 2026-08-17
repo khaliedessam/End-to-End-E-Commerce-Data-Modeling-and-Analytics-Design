@@ -295,6 +295,47 @@ The analytical SQL queries are available in **`Scripts/06_analytics`**, and the 
 ![Power BI Dashboard](docs/images/power_bi_dashboard.png)
 
 
+## 📸 Project Screenshots
+
+Below are selected screenshots showcasing the data models and SQL-based analytical reports developed as part of the project.
+
+### 🗂️ Conceptual Data Model
+
+![Conceptual Data Model](docs/images/Conceptual%20Data%20Modeling.drawio.png)
+
+### 🏗️ Normalized OLTP Schema
+
+![Normalized OLTP Schema](docs/images/Normalized%20OLTP%20Schema.png)
+
+
+### ⭐ Star Schema
+
+![Star Schema](docs/images/Star%20Schema%20Model.png)
+
+---
+
+## 📊 SQL Analytics Reports
+
+The following screenshots demonstrate the SQL analytical reports developed to generate business insights from the Gold layer.
+
+### 👥 Customer Report
+
+![Customer Report](docs/images/Customer%20Report.png)
+
+### 📦 Product Report
+
+![Product Report](docs/images/Product%20Report.png)
+
+### 📈 KPI Analysis
+
+![KPI Analysis](docs/images/KPIS.png)
+
+### 📊 Performance Analysis
+
+![Performance Analysis](docs/images/Performance%20analysis.png)
+
+
+
 ## 🚀 Future Enhancements
 
 The current release focuses on the **Sales Data Mart**, with the architecture designed to support future analytical data marts for additional business domains, including:
@@ -303,34 +344,3 @@ The current release focuses on the **Sales Data Mart**, with the architecture de
 - 🚚 **Procurement Data Mart** – Supplier performance, purchasing activity, and product sourcing.
 - ⭐ **Customer Reviews Data Mart** – Product ratings, customer feedback, and review analytics.
 - 🎯 **Promotion Data Mart** – Promotion effectiveness, discount analysis, and campaign performance.
-
-## 📸 Project Screenshots
-
-Below are selected screenshots showcasing the main components and workflow of the project.
-
-### 🗂️ Conceptual Data Model
-
-![Conceptual Data Model](docs/images/Conceptual%20Data%20Modeling.png)
-
-### 🏗️ Normalized OLTP Schema
-
-![Normalized OLTP Schema](docs/images/Normalized%20OLTP%20Schema.png)
-
-### 🏛️ Data Warehouse Architecture
-
-![Data Warehouse Architecture](docs/images/Data_Architecture.png)
-
-### ⭐ Star Schema
-
-![Star Schema](docs/images/Star%20Schema%20Model.png)
-
-### ⚙️ ETL Process
-
-![ETL Process](docs/images/ETL_Process.png)
-
-### 📋 ETL Execution Logs
-
-![ETL Table Logs](docs/images/ETL_Table_Logs.png)
-
-
-
